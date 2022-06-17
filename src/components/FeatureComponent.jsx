@@ -10,7 +10,7 @@ const FeatureComponent = ({
   animate,
 }) => {
   return (
-    <Box sx={{ width: "317px", height: "222px",marginBottom:"110px" }}>
+    <Box sx={{ width: "280px", height: "222px",marginBottom:"110px" }}>
       <Box
         sx={{
           width: "55px",
