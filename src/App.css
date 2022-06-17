@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.page-bg{
+  /* TODO:Remove this height */
   color: white;
+  /* height: 3303px; */
+  background: transparent url('assets/BG.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+}
+/* 
+ul {
+  border-left: 1px dashed #4E517B;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+  list-style: none;
+  margin-bottom: 42px;
+  padding: 0;
+  line-height: 1.5;
+}
+ul span::before{
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul span {
+  font: normal normal 600 20px/24px Montserrat,sans-serif;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5em 0 -0.8em;
+  border-radius: 50%;  
+  text-align: center;
+  background:#4E517B;
+  padding-top: 2.5px;
+} */
+.list-wrapper {
+  position:relative;
+}
+.list-item-wrapper {
+  margin-top:42px;
+  position:relative;
+}
+.list-bullet {
+  float:left;
+  margin-right:20px;
+  background:#4E517B;
+  height:30px;
+  width:30px;
+  line-height:30px;
+  border-radius:100px;
+  text-align:center;
+  font: normal normal 600 20px/24px Montserrat;
+  z-index: 5;
+  position: relative;
+}
+.li-no-span{
+  position: absolute;
+  z-index: 5;
+  left:10px;
+  top:2px;
+  
+}
+.list-item {
+  display:table-row;
+  vertical-align:middle;
+}
+.list-title {
+    font-weight:700;
+}
+.list-text {
+    font-weight:400;
+}
+.red-line {
+border: 1px dashed #4E517B; 
+ z-index:1;
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:15px;
+}
+.white-line {
+  background:#FFF;
+  z-index:-1;
+  top:0px;
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:15px;
 }
