@@ -10,7 +10,7 @@ const FeatureComponent = ({
   animate,
 }) => {
   return (
-    <Box sx={{ width: "280px", height: "222px",marginBottom:"110px" }}>
+    <Box sx={{ width: "280px", height: "222px", marginBottom: "110px" }}>
       <Box
         sx={{
           width: "55px",
@@ -23,7 +23,10 @@ const FeatureComponent = ({
       <Box
         component="h6"
         py={3}
-        sx={{ font: "normal normal 600 28px/33px Montserrat,sans-serif;",width:"80%"}}
+        sx={{
+          font: "normal normal 600 28px/33px Montserrat,sans-serif;",
+          width: "80%",
+        }}
       >
         {heading}
       </Box>

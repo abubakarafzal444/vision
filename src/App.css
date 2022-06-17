@@ -2,41 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 .page-bg{
-  /* TODO:Remove this height */
   color: white;
-  /* height: 3303px; */
   background: transparent url('assets/BG.png') 0% 0% no-repeat padding-box;
   background-size: cover;
 }
-/* 
-ul {
-  border-left: 1px dashed #4E517B;
-  padding: 0;
-}
 
-ul li {
-  list-style: none;
-  margin-bottom: 42px;
-  padding: 0;
-  line-height: 1.5;
-}
-ul span::before{
-  margin-left: 15px;
-}
-
-ul span {
-  font: normal normal 600 20px/24px Montserrat,sans-serif;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 0 0.5em 0 -0.8em;
-  border-radius: 50%;  
-  text-align: center;
-  background:#4E517B;
-  padding-top: 2.5px;
-} */
 .list-wrapper {
   position:relative;
 }
@@ -74,7 +47,7 @@ ul span {
 .list-text {
     font-weight:400;
 }
-.red-line {
+.purple-line {
 border: 1px dashed #4E517B; 
  z-index:1;
   width:1px;

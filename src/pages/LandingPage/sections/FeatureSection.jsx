@@ -122,7 +122,7 @@ const FeatureSection = () => {
       >
         <Grid container spacing={3} >
           {featureArray.slice(0, 4).map((feature, index) => (
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid key={index} item xs={12} md={6} lg={3}>
               <FeatureComponent
                 isKey={index === 0 && true}
                 icon={feature.icon}
@@ -136,7 +136,7 @@ const FeatureSection = () => {
             </Grid>
             <Grid container spacing={3}>
           {featureArray.slice(4, 8).map((feature, index) => (
-            <Grid item xs={12} md={6} lg={3}>
+            <Grid key={index} item xs={12} md={6} lg={3}>
               <FeatureComponent
                 isKey={index === 0 && true}
                 icon={feature.icon}
