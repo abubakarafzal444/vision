@@ -22,6 +22,7 @@ const HeaderSection = () => {
           flexDirection: "column",
           alignItems: "center",
           position: "relative",
+          zIndex: "7",
         }}
       >
         <Box
