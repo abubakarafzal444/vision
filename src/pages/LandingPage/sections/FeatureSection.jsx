@@ -57,7 +57,7 @@ const featureArray = [
     description:
       "Support for all the most popular fiat currencies and cryptocurrencies",
     link: "Multichain",
-    animate: "false",
+    animate: false,
   },
   {
     icon: chain,
@@ -65,6 +65,7 @@ const featureArray = [
     description:
       "PROJECT_NAME is currently active on Ethereum, Binance Smart Chain and Aurora",
     link: "none",
+    animate: false,
   },
   {
     icon: chart,

@@ -54,7 +54,8 @@ const JoinUsSection = () => {
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
-            display:"flex"
+            display:"flex",
+            cursor:"pointer"
           }}
         >
           <Box
@@ -77,7 +78,9 @@ const JoinUsSection = () => {
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
-            display:"flex"
+            display:"flex",
+            cursor:"pointer"
+
           }}
         >
           <Box

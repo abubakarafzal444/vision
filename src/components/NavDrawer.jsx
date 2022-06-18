@@ -1,13 +1,15 @@
 import { Drawer, IconButton } from "@mui/material";
 import React from "react";
 import Cross from "assets/Cross.svg";
-import Discord from "assets/Discord.svg";
-import Twitter from "assets/Twitter.svg";
+import Discord from "assets/DiscordWhite.svg";
+import Twitter from "assets/TwitterWhite.svg";
 import { Box } from "@mui/system";
 
 const NavDrawer = ({ closeFunc, open }) => {
   return (
     <Drawer
+    variant="persistent"
+    transitionDuration={300}
       anchor={"right"}
       PaperProps={{
         sx: { width: "100%", opacity: "0.9", backgroundColor: "#010017",overflow: "hidden" },
