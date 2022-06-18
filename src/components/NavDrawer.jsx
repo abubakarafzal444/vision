@@ -75,7 +75,7 @@ const NavDrawer = ({ closeFunc, open }) => {
             </IconButton>
           </Box>
         </Box>
-        <Box className="drawer-gradient" sx={{position:"absolute",top:"0",right:"0",bottom:"0",left:"0"}}></Box>
+        <Box className="drawer-gradient" sx={{position:"absolute",maxWidth:"100vw",maxHeight:"100vh",minWidth:"100vw",minHeight:"100vh"}}></Box>
         <Box sx={{ marginY: "164px", marginLeft: "38px",position:"relative",zIndex:"3"}}>
           <Box
             component="p"
