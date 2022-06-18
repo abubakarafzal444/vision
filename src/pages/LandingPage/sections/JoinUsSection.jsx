@@ -1,8 +1,8 @@
 import { Box } from "@mui/system";
 import React from "react";
 import stripeImg from "assets/Abstractstripes.svg";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import MemoryIcon from "@mui/icons-material/Memory";
+import Discord from "assets/Discord.svg";
+import Twitter from "assets/Twitter.svg";
 
 const JoinUsSection = () => {
   return (
@@ -19,6 +19,7 @@ const JoinUsSection = () => {
         <Box className="circle-parent join-now-parent"></Box>
         <Box className="circle-child join-now-child"></Box>
         <Box
+        component="h3"
           sx={{
             position: "relative",
             left:{md:"unset",xs:"40px"},
@@ -53,18 +54,20 @@ const JoinUsSection = () => {
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
+            display:"flex"
           }}
         >
           <Box
-            component="span"
             sx={{
               width: "32px",
               height: "37px",
-              color: "#A29BFF",
               marginRight: "5px",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              filter: "invert(100%)",
+              backgroundImage: `url(${Discord}) `,
             }}
           >
-            <MemoryIcon />
           </Box>
           project_name
         </Box>
@@ -75,18 +78,21 @@ const JoinUsSection = () => {
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
+            display:"flex"
           }}
         >
           <Box
-            component="span"
             sx={{
               width: "32px",
               height: "37px",
               color: "#A29BFF",
               marginRight: "5px",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              filter: "invert(100%)",
+              backgroundImage: `url(${Twitter}) `,
             }}
           >
-            <TwitterIcon />
           </Box>
           project_name
         </Box>

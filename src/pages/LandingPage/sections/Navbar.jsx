@@ -2,19 +2,27 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import { IconButton } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import HamburgerIcon from "assets/Hamburger1.svg";
+import NavDrawer from "components/NavDrawer";
 
 export default function Navbar() {
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" elevation={0} color="transparent">
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={{ marginLeft: "7.3%", marginTop: {md:"27px",xs:"12px" }}}>
+          <Box
+            sx={{ marginLeft: "7.3%", marginTop: { md: "27px", xs: "12px" } }}
+          >
             <Box
               sx={{
-                font: {sm:"normal normal 600 30px/37px Montserrat,sans-serif",xs:"normal normal 600 26 Montserrat,sans-serif"},
+                font: {
+                  sm: "normal normal 600 30px/37px Montserrat,sans-serif",
+                  xs: "normal normal 600 26 Montserrat,sans-serif",
+                },
                 color: "#E4E6FD",
-                cursor:"pointer"
+                cursor: "pointer",
               }}
               component="h2"
             >
@@ -24,7 +32,7 @@ export default function Navbar() {
               sx={{
                 color: "#C4C4C4",
                 lineHeight: "0.5",
-                fontSize:"11px"
+                fontSize: "11px",
               }}
               component="p"
             >
@@ -33,7 +41,7 @@ export default function Navbar() {
           </Box>
           <Box
             sx={{
-              display: {xs:"none",md:"flex"},
+              display: { xs: "none", md: "flex" },
               marginRight: "9.5%",
               width: "401px",
               justifyContent: "space-between",
@@ -46,7 +54,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
-                cursor:"pointer",
+                cursor: "pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -60,7 +68,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
-                cursor:"pointer",
+                cursor: "pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -74,7 +82,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
-                cursor:"pointer",
+                cursor: "pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -85,34 +93,33 @@ export default function Navbar() {
           </Box>
           <Box
             sx={{
-              display: {xs:"flex",md:"none"},
-               marginRight: "12px",
-              // width: "401px",
-              // justifyContent: "space-between",
-              marginTop: "7px",
+              display: { xs: "flex", md: "none" },
+              marginRight: "15px",
+              marginTop: "6px",
             }}
           >
-                     <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-            </Box>
- 
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => setOpenDrawer(true)}
+            >
+              <Box
+                sx={{
+                  width: "28px",
+                  height: "20px",
+                  background: `url(${HamburgerIcon}) `,
+                }}
+              ></Box>
+            </IconButton>
+            <NavDrawer
+              closeFunc={() => setOpenDrawer(false)}
+              open={openDrawer}
+            />
+          </Box>
         </Box>
       </AppBar>
     </Box>
   );
 }
-<IconButton
-size="large"
-edge="end"
-color="inherit"
-aria-label="menu"
-sx={{display:{sm:"none",xs:"flex"}}}
->
-<MenuIcon />
-</IconButton>

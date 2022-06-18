@@ -94,3 +94,11 @@ opacity: 1;
 .join-now-parent{
   left:-40px !important;
 }
+.header-gradient{
+  background: rgb(113,108,180);
+  background: linear-gradient(141deg, rgba(113,108,180,1) 0%, rgba(73,69,128,1) 13%, rgba(47,44,90,1) 30%, rgba(14,12,41,1) 57%, rgba(9,7,33,1) 67%, rgba(4,2,26,1) 75%); 
+  height: 230px;
+  width: 230px;
+  border-radius: 50%;
+  position: absolute;
+}
