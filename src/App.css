@@ -4,12 +4,6 @@
   box-sizing: border-box;
   color: white;
 }
-.page-bg{
-  color: white;
-  background: transparent url('assets/BG.png') 0% 0% no-repeat padding-box;
-  background-size: cover;
-}
-
 .list-wrapper {
   position:relative;
 }
@@ -48,7 +42,7 @@
     font-weight:400;
 }
 .purple-line {
-border: 1px dashed #4E517B; 
+border-left: 1px dashed #4E517B; 
  z-index:1;
   width:1px;
   height:100%;

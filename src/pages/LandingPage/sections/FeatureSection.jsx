@@ -81,9 +81,9 @@ const FeatureSection = () => {
     <>
       <Box
         sx={{
-          width: "240px",
-          height: "240px",
-          marginLeft: "180px",
+          width: {sm:"240px"},
+          height: {sm:"240px",xs:"170px"},
+           marginLeft: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" }
           // background: "#1A1D44 0% 0% no-repeat padding-box",
           // borderRadius: "589px",
           // filter: " blur(50px)",
@@ -109,8 +109,9 @@ const FeatureSection = () => {
         ></Box>
         <Box
           sx={{
-            font: "normal normal 600 45px/55px Montserrat,sans-serif",
+            font: {sm:"normal normal 600 45px/55px Montserrat,sans-serif",xs:"normal normal 600 30px Montserrat,sans-serif"},
             color: "#A29BFF",
+            textAlign:"center",
           }}
         >
           Features
@@ -118,11 +119,11 @@ const FeatureSection = () => {
       </Box>
 
       <Box
-        sx={{ flexGrow: 1, marginX: { md: "180px", sm: "20px", xs: "10px" },position: "relative",bottom:"20px" }}
+        sx={{ flexGrow: 1, marginX: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },position: "relative",bottom:"20px" }}
       >
         <Grid container spacing={3} >
           {featureArray.slice(0, 4).map((feature, index) => (
-            <Grid key={index} item xs={12} md={6} lg={3}>
+            <Grid key={index} item xs={12} sm={6} md={6} lg={3} sx={{display:"flex",justifyContent:"center"}}>
               <FeatureComponent
                 isKey={index === 0 && true}
                 icon={feature.icon}
@@ -136,7 +137,7 @@ const FeatureSection = () => {
             </Grid>
             <Grid container spacing={3}>
           {featureArray.slice(4, 8).map((feature, index) => (
-            <Grid key={index} item xs={12} md={6} lg={3}>
+            <Grid key={index} item xs={12} sm={6} md={6} lg={3}  sx={{display:"flex",justifyContent:"center"}}>
               <FeatureComponent
                 isKey={index === 0 && true}
                 icon={feature.icon}

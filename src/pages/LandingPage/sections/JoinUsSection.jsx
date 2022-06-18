@@ -1,6 +1,8 @@
 import { Box } from "@mui/system";
 import React from "react";
 import stripeImg from "assets/Abstractstripes.svg";
+import TwitterIcon from '@mui/icons-material/Twitter';
+import MemoryIcon from '@mui/icons-material/Memory';
 
 const JoinUsSection = () => {
   return (
@@ -9,14 +11,13 @@ const JoinUsSection = () => {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        height: "370px",
-        marginTop: "180px",
+        marginTop: {sm:"180px",xs:"77px"},
         background: `transparent url(${stripeImg}) no-repeat right 20% top -48px`,
       }}
     >
       <Box
         sx={{
-          font: "normal normal 600 45px/55px Montserrat,sans-serif",
+          font: {sm:"normal normal 600 45px/55px Montserrat,sans-serif",xs:"normal normal 600 30px Montserrat,sans-serif",},
           color: "#A29BFF",
         }}
       >
@@ -25,16 +26,18 @@ const JoinUsSection = () => {
       <Box
         sx={{
           display: "flex",
-          font: "normal normal 400 26px/25px Montserrat,sans-serif",
-          marginTop: "32px",
+          flexDirection: {sm:"row",xs:"column"},
+          font: {sm:"normal normal 400 26px/25px Montserrat,sans-serif",xs:"normal normal 400 20px Montserrat,sans-serif"},
+        marginTop: {sm:"32px",xs:"37px"},
         }}
       >
         <Box
           cpmponent="p"
           sx={{
             color: "#E4E6FD",
-            marginRight: "65px",
+            marginRight: {sm:"65px"},
             textDecoration: "underline",
+
           }}
         >
           <Box
@@ -42,9 +45,10 @@ const JoinUsSection = () => {
             sx={{
               width: "32px",
               height: "37px",
-              background: "#A29BFF 0% 0% no-repeat padding-box",
+              color:"#A29BFF",
+              marginRight:"5px",
             }}
-          ></Box>
+          ><MemoryIcon/></Box>
           project_name
         </Box>
         <Box
@@ -56,14 +60,16 @@ const JoinUsSection = () => {
             sx={{
               width: "32px",
               height: "37px",
-              background: "#A29BFF 0% 0% no-repeat padding-box",
+              color:"#A29BFF",
+              marginRight:"5px",
+
             }}
-          ></Box>
+          ><TwitterIcon/></Box>
           project_name
         </Box>
       </Box>
-      <Box sx={{ marginTop: "200px", marginButtom: "30px" }}>
-        <Box component="p">
+      <Box sx={{ marginTop: {sm:"250px",xs:"160px" },display:"flex",justifyContent:"center"}}>
+        <Box component="p" sx={{font:"normal normal normal 16px/25px Montserrat;",marginBottom: {sm:"50px",xs:"21px"},textAlign:"center",width:{sm:"unset",xs:"70%"}}}>
           Copyright 2022 Projekt_name. all rights reserved
         </Box>
       </Box>

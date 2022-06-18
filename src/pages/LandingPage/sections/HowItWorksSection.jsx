@@ -11,6 +11,7 @@ const HowItWorksSection = () => {
       <Box
         sx={{
           flexGrow: 1,
+          marginTop:{xs:"70px",sm:"unset"},
           marginX: {
             md: "20px",
             sm: "20px",
@@ -23,6 +24,10 @@ const HowItWorksSection = () => {
         <Box
           sx={{
             display: "flex",
+            flexDirection: {md:"row",xs:"column"},
+            // flexDirection: "column",
+            justifyContent:{xs:"center",md:"unset"},
+            // width:"100%"
           }}
         >
           <Box
@@ -32,29 +37,37 @@ const HowItWorksSection = () => {
               backgroundSize: "cover",
             }}
           >
+
             <Box
               mr={3}
               sx={{
-                minWidth: "400px",
-                height: "300px",
+                minWidth: {lg:"400px",md:"300px",xs:"320px"},
+                height: {lg:"300px",xs:"240px"},
+                marginX:{md:"unset",xs:"auto"},
+                marginRight:{md:"20px"},
                 background: `transparent url(${BuyWith1}) 0% 0% no-repeat padding-box;`,
                 backgroundSize: "contain",
-                marginTop: "220px",
+                marginTop: {md:"220px"},
+                backgroundPosition:{md:"unset",xs:"center"},
+                marginBottom:{md:"unset",xs:"70px"}
               }}
             ></Box>
             <Box
               sx={{
-                minWidth: "270px",
-                height: "326px",
-                background: `transparent url(${BuySell1}) 0% 0% no-repeat padding-box`,
+                minWidth: {lg:"270px",sm:"200px"},
+                height: {lg:"326px",sm:"275px"},
+                background: `url(${BuySell1}) 0% 0% no-repeat padding-box`,
                 backgroundSize: "contain",
                 marginTop: "10px",
+                display:{xs:"none",md:"block"},
               }}
             ></Box>
           </Box>
           <Box
             sx={{
-              marginLeft: { lg: "10vw", xs: "15px" },
+              marginLeft: { lg: "10vw",xs:"37px" },
+              marginRight: { sm: "unset",xs:"37px" },
+
               marginTop: "80px",
               maxWidth: "630px",
             }}
@@ -62,8 +75,8 @@ const HowItWorksSection = () => {
             <Box
               component="h2"
               sx={{
-                font: "normal normal 600 45px/55px Montserrat,sans-serif",
-                marginBottom: "77px",
+                font: {sm:"normal normal 600 45px/55px Montserrat,sans-serif",xs:"normal normal 600 30px Montserrat,sans-serif"},
+                marginBottom: {sm:"77px",xs:"70px"},
               }}
             >
               How does it{" "}
@@ -120,20 +133,7 @@ const HowItWorksSection = () => {
                 </Box>
               </Box>
             </Box>
-            <Button
-              variant="outlined"
-              sx={{
-                width: "170px",
-                height: "50px",
-                border: "1px solid #A29BFF",
-                borderRadius: "145px",
-                font: " normal normal 600 20px/25px Montserrat,sans-serif",
-                marginTop: "65px",
-                marginLeft: "-50px",
-              }}
-            >
-              Start now
-            </Button>
+            <Button fullWidth variant="outlined" sx={{width:{sm:"170px",xs:"100%"},height:"50px",border:"1px solid #A29BFF",borderRadius:"145px",font:{sm:"normal normal 600 20px/25px Montserrat,sans-serif",xs:"normal normal 600 20px Montserrat,sans-serif"},marginTop:{sm:"65px",xs:"40px"},marginLeft:"-50px"}}>Start now</Button>
           </Box>
         </Box>
       </Box>

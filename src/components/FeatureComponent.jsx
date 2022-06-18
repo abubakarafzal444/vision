@@ -10,7 +10,9 @@ const FeatureComponent = ({
   animate,
 }) => {
   return (
-    <Box sx={{ width: "280px", height: "222px", marginBottom: "110px" }}>
+    <Box sx={{ width: {sm:"280px",xs:"320"}, height: {sm:"222px",xs:"210px"}, marginBottom: {sm:"110px",xs:"60px" },
+    marginX: {sm:"unset",xs:"35px" },
+    }}>
       <Box
         sx={{
           width: "55px",
@@ -24,7 +26,7 @@ const FeatureComponent = ({
         component="h6"
         py={3}
         sx={{
-          font: "normal normal 600 28px/33px Montserrat,sans-serif;",
+          font: {sm:"normal normal 600 28px/33px Montserrat,sans-serif;",xs:"normal normal 600 27px Montserrat,sans-serif;"},
           width: "80%",
         }}
       >
@@ -34,7 +36,7 @@ const FeatureComponent = ({
         component="p"
         sx={{
           color: "#E4E6FD",
-          font: "normal normal 300 16px/25px Montserrat,sans-serif;",
+          font: {sm:"normal normal 300 16px/25px Montserrat,sans-serif;",xs:"normal normal 300 16px Montserrat,sans-serif;"},
         }}
       >
         {description}
@@ -44,7 +46,7 @@ const FeatureComponent = ({
           component="p"
           sx={{
             textDecoration: "underline",
-            font: "normal normal 600 16px/19px Montserrat,sans-serif",
+            font: {sm:"normal normal 600 16px/19px Montserrat,sans-serif",xs:"normal normal 600 16px Montserrat,sans-serif"},
             color: "#A29BFF",
           }}
         >

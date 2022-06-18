@@ -1,17 +1,20 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import { IconButton } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" elevation={0} color="transparent">
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Box sx={{ marginLeft: "7.3%", marginTop: "27px" }}>
+          <Box sx={{ marginLeft: "7.3%", marginTop: {md:"27px",xs:"12px" }}}>
             <Box
               sx={{
-                font: "normal normal 600 30px/37px Montserrat,sans-serif",
+                font: {sm:"normal normal 600 30px/37px Montserrat,sans-serif",xs:"normal normal 600 26 Montserrat,sans-serif"},
                 color: "#E4E6FD",
+                cursor:"pointer"
               }}
               component="h2"
             >
@@ -21,6 +24,7 @@ export default function Navbar() {
               sx={{
                 color: "#C4C4C4",
                 lineHeight: "0.5",
+                fontSize:"11px"
               }}
               component="p"
             >
@@ -29,7 +33,7 @@ export default function Navbar() {
           </Box>
           <Box
             sx={{
-              display: "flex",
+              display: {xs:"none",md:"flex"},
               marginRight: "9.5%",
               width: "401px",
               justifyContent: "space-between",
@@ -42,7 +46,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
-
+                cursor:"pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -56,6 +60,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
+                cursor:"pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -69,6 +74,7 @@ export default function Navbar() {
                 font: "normal normal bold 19px/19px Montserrat,sans-serif",
                 borderBottom: "3px solid #A29BFF",
                 paddingBottom: "7px",
+                cursor:"pointer",
                 "&:hover": {
                   color: "#A29BFF",
                 },
@@ -77,16 +83,36 @@ export default function Navbar() {
               Join us
             </Box>
           </Box>
-          {/* <IconButton
+          <Box
+            sx={{
+              display: {xs:"flex",md:"none"},
+               marginRight: "12px",
+              // width: "401px",
+              // justifyContent: "space-between",
+              marginTop: "7px",
+            }}
+          >
+                     <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
           >
             <MenuIcon />
-          </IconButton> */}
+          </IconButton>
+            </Box>
+ 
         </Box>
       </AppBar>
     </Box>
   );
 }
+<IconButton
+size="large"
+edge="end"
+color="inherit"
+aria-label="menu"
+sx={{display:{sm:"none",xs:"flex"}}}
+>
+<MenuIcon />
+</IconButton>
