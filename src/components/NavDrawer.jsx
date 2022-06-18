@@ -1,4 +1,4 @@
-import { AppBar, Drawer, IconButton } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
 import React from "react";
 import Cross from "assets/Cross.svg";
 import Discord from "assets/Discord.svg";
@@ -10,7 +10,7 @@ const NavDrawer = ({ closeFunc, open }) => {
     <Drawer
       anchor={"right"}
       PaperProps={{
-        sx: { width: "100%", opacity: "0.9", backgroundColor: "#010017" },
+        sx: { width: "100%", opacity: "0.9", backgroundColor: "#010017",overflow: "hidden" },
       }}
       open={open}
       onClose={() => closeFunc()}
@@ -50,6 +50,7 @@ const NavDrawer = ({ closeFunc, open }) => {
               display: { xs: "flex", md: "none" },
               marginRight: "15px",
               marginTop: "6px",
+              
             }}
           >
             <IconButton
@@ -67,12 +68,14 @@ const NavDrawer = ({ closeFunc, open }) => {
                   backgroundRepeat: "no-repeat",
                   filter: "invert(100%)",
                   backgroundImage: `url(${Cross}) `,
+                  
                 }}
               ></Box>
             </IconButton>
           </Box>
         </Box>
-        <Box sx={{ marginY: "164px", marginLeft: "38px" }}>
+        <Box className="drawer-gradient" sx={{position:"absolute",maxWidth:"100vw",maxHeight:"100vh",minWidth:"100vw",minHeight:"100vh"}}></Box>
+        <Box sx={{ marginY: "164px", marginLeft: "38px",position:"relative",zIndex:"3"}}>
           <Box
             component="p"
             sx={{
@@ -112,8 +115,10 @@ const NavDrawer = ({ closeFunc, open }) => {
           >
             Join us
           </Box>
+
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+      
+        <Box sx={{ display: "flex", justifyContent: "center",position:"relative",zIndex:"3" }}>
           <Box
             component="span"
             sx={{

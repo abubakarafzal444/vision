@@ -17,14 +17,22 @@ const HeaderSection = () => {
       }}
     >
       <Box
-        sx={{ display: "flex", flexDirection: "column", alignItems: "center" ,position:"relative"}}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          position: "relative",
+        }}
       >
-        <Box className="header-gradient"sx={{display:{sm:"none"},left:"20px"}}></Box>
+        <Box
+          className="header-gradient"
+          sx={{ display: { sm: "none" }, left: "20px" }}
+        ></Box>
         <Box
           component="h1"
           sx={{
             position: "relative",
-            zIndex:"6",
+            zIndex: "6",
             font: {
               lg: "normal normal bold 94px/102px Montserrat, sans-serif",
               sm: "normal normal bold 65px Montserrat, sans-serif",
@@ -52,11 +60,11 @@ const HeaderSection = () => {
               xs: "normal normal 300 16px Montserrat,sans-serif",
             },
             position: "relative",
-            zIndex:"6",
+            zIndex: "6",
             marginTop: "10px",
             color: "#F5F5F5",
             textAlign: "center",
-            width: { md: "100%", md: "80%", xs: "88%" },
+            width: {  md: "80%", xs: "88%" },
             lineHeight: { sm: "unset", xs: "1.7" },
           }}
         >
@@ -68,27 +76,51 @@ const HeaderSection = () => {
           sx={{
             background: "#A29BFF 0% 0% no-repeat padding-box",
             borderRadius: "23px",
-            width: "94px",
+            width: {sm:"194px",xs:"318px"},
             height: "46px",
-            font: {
-              sm: "normal normal 600 21px/22px Montserrat,sans-serif",
-              xs: "normal normal 600 18px Montserrat,sans-serif",
-            },
-            color: "#08061C",
+            marginBottom: "4px",
             marginTop: "27px",
-            width: "190px",
             textTransform: "unset",
-            marginLeft: "2px",
+            padding: "0",
+            display: "flex",
+            justifyContent:"space-between",
+            paddingLeft:{sm:"35px",xs:"105px"},
+            paddingRight:{sm:"40px",xs:"104px"},
             "&:hover": {
-              transform: "scale(1.5,1.1)",
-              width: "normal normal 600 19px/23px Montserrat",
-              // width:"300px",
+              width: "296px",
+              height: "50px",
+              marginBottom: "0px",
               background: "#A29BFF 0% 0% no-repeat padding-box",
+              paddingLeft:{sm:"85px",xs:"100px"},
+              paddingRight:"15px",
+              fontSize: "19px !important",
+              transition:"all 0.4s ease-out;"
             },
           }}
         >
-          Trade now
-          {/* <Box component="span" sx={{width:"20px",height:"20px"}}><ArrowForwardIcon/></Box> */}
+
+            <Box
+              sx={{
+                font: {
+                  sm: "normal normal 600 21px/22px Montserrat,sans-serif",
+                  xs: "normal normal 600 18px Montserrat,sans-serif",
+                },
+                color: "#08061C",
+              }}
+            >
+              Trade now
+            </Box>
+            <Box
+              sx={{
+                width: "4.33px",
+                height: "8.6px",
+                marginLeft: "7px",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+
+                backgroundImage: `url(${ArrowForwardIcon}) `,
+              }}
+            ></Box>
         </Button>
       </Box>
       <Box

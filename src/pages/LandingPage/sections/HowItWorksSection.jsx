@@ -141,20 +141,65 @@ const HowItWorksSection = () => {
                 </Box>
               </Box>
             </Box>
-            <Button
-              fullWidth
+            {/* <Button
+              
               variant="outlined"
               sx={{
-                width: { sm: "170px", xs: "100%" },
-                height: "50px",
+                maxWidth:"170px",
+                height: "60px",
+                paddingX:"25px",
+                left:"50px",
                 border: "1px solid #A29BFF",
                 borderRadius: "145px",
                 font: {
-                  sm: "normal normal 600 20px/25px Montserrat,sans-serif",
+                  sm: "normal normal 600 18px/25px Montserrat,sans-serif",
                   xs: "normal normal 600 20px Montserrat,sans-serif",
                 },
                 marginTop: { sm: "65px", xs: "40px" },
                 marginLeft: "-50px",
+    
+
+                "&:hover": {
+                  // width:"220px",height:"54px",
+                  // marginBottom:"6px"
+                  // transform: "scaleX(1.15)",
+                  paddingX:"35px",
+
+                  maxWidth:"200px",
+                },
+                
+              }}
+            >
+              Start now
+            </Button> */}
+             <Button
+              
+              variant="outlined"
+              sx={{
+                maxWidth:{sm:"170px",xs:"100%"},
+                minWidth:{xs:"100%",sm:"unset"},
+                height: "60px",
+                paddingX:"25px",
+                left:"50px",
+                border: "1px solid #A29BFF",
+                borderRadius: "145px",
+                font: {
+                  sm: "normal normal 600 18px/25px Montserrat,sans-serif",
+                  xs: "normal normal 600 20px Montserrat,sans-serif",
+                },
+                marginTop: { sm: "65px", xs: "40px" },
+                marginLeft: "-100px",
+                "&:hover": {
+                   transform: {sm:"scaleX(1.15)"}, 
+                   maxWidth:{sm:"170px",xs:"200px"},
+                   minWidth:{xs:"200px",sm:"unset"},
+                   transition:"all 0.3s ease-out;",
+                   background: "#A29BFF 0% 0% no-repeat padding-box;",
+                   boxShadow:"0px 3px 30px #00DCFF7D;",
+                   border:"1px solid #A29BFF",
+                   color:"#0e0c29"
+                },
+                
               }}
             >
               Start now
