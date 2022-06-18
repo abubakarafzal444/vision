@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowForwardIcon from "assets/Arrowbutton.svg";
 import stripeImg from "assets/Abstractstripes.svg";
 import BuySell2 from "assets/Buysell2.png";
 import centerImg from "assets/23123.png";
@@ -48,9 +48,7 @@ const HeaderSection = () => {
         </Box>
         <Button
           variant="contained"
-          endIcon={
-            <ArrowForwardIosIcon sx={{ fontSize: "10px", marginTop: "3px" }} />
-          }
+         
           sx={{
             background: "#A29BFF 0% 0% no-repeat padding-box",
             borderRadius: "23px",
@@ -71,6 +69,8 @@ const HeaderSection = () => {
           }}
         >
           Trade now
+          {/* <Box component="span" sx={{width:"20px",height:"20px"}}><ArrowForwardIcon/></Box> */}
+
         </Button>
       </Box>
       <Box

@@ -58,3 +58,39 @@ border-left: 1px dashed #4E517B;
   position:absolute;
   left:15px;
 }
+
+
+.circle-parent{
+  width:240px;
+  height:240px;
+  background: #1A1D44 0% 0% no-repeat padding-box;
+border-radius: 589px;
+opacity: 1;
+  position:absolute;
+filter: blur(50px);
+  z-index:2;
+  left: -75px;
+  bottom: -120px;
+}
+.circle-child{
+  width:80px;
+  height:80px;
+  background: #A29BFF 0% 0% no-repeat padding-box;
+opacity: 1;
+  border-radius:50px;
+  position:absolute;
+  left: -36px;
+  top: -25px;
+  z-index: 1;
+
+}
+.features-h1{
+  left:-75px !important;
+  bottom: 33px !important;
+}
+.join-now-child{
+  left: 0px !important;
+}
+.join-now-parent{
+  left:-40px !important;
+}

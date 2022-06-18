@@ -83,43 +83,39 @@ const FeatureSection = () => {
         sx={{
           width: {sm:"240px"},
           height: {sm:"240px",xs:"170px"},
-           marginLeft: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" }
-          // background: "#1A1D44 0% 0% no-repeat padding-box",
-          // borderRadius: "589px",
-          // filter: " blur(50px)",
-        }}
+           marginLeft: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },
+           display:"flex",
+           justifyContent:"center",
+           marginTop:{sm:"100px",md:"0px",xs:"75px"},
 
-        // sx={{
-        //   display: "flex",
-        //   alignItems: "baseline",
-        //   marginLeft: "3%",
-        //   marginTop: "20px",
-        // }}
+      
+        }}
       >
-        <Box
-          sx={{
-            height: "80px",
-            width: "80px",
-            background: "#A29BFF 0% 0% no-repeat padding-box",
-            opacity: "1",
-            //   background: "#1A1D44 0% 0% no-repeat padding-box",
-            borderRadius: "589px",
-            filter: " blur(38px)",
-          }}
-        ></Box>
-        <Box
-          sx={{
-            font: {sm:"normal normal 600 45px/55px Montserrat,sans-serif",xs:"normal normal 600 30px Montserrat,sans-serif"},
-            color: "#A29BFF",
-            textAlign:"center",
-          }}
-        >
-          Features
-        </Box>
+
+<Box sx={{ position: "relative" }}>
+              <Box className="circle-parent features-h1"></Box>
+              <Box className="circle-child"></Box>
+              <Box
+                component="h2"
+                sx={{
+                  font: {
+                    sm: "normal normal 600 45px/55px Montserrat,sans-serif",
+                    xs: "normal normal 600 30px Montserrat,sans-serif",
+                  },
+                  marginBottom: { sm: "77px", xs: "70px" },
+                  position: "relative",
+                  zIndex: "6",
+                  color:"#A29BFF"
+                }}
+              >
+              Features!
+              </Box>
+            </Box>
+
       </Box>
 
       <Box
-        sx={{ flexGrow: 1, marginX: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },position: "relative",bottom:"20px" }}
+        sx={{ flexGrow: 1, marginX: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },position: "relative",bottom:{sm:"40px",xs:"100px",md:"20px"} }}
       >
         <Grid container spacing={3} >
           {featureArray.slice(0, 4).map((feature, index) => (
