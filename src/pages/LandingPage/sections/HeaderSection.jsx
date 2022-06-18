@@ -106,6 +106,8 @@ const HeaderSection = () => {
                   xs: "normal normal 600 18px Montserrat,sans-serif",
                 },
                 color: "#08061C",
+                position:"relative",
+                zIndex:"8"
               }}
             >
               Trade now

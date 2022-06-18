@@ -93,7 +93,7 @@ const HowItWorksSection = () => {
               </Box>
             </Box>
 
-            <Box className="list-wrapper">
+            <Box className="list-wrapper" sx={{position:"relative",zIndex:"7"}}>
               <Box className="purple-line"></Box>
               <Box className="list-item-wrapper">
                 <Box className="list-bullet">
