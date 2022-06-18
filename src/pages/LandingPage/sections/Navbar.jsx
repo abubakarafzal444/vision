@@ -5,9 +5,10 @@ import { IconButton } from "@mui/material";
 import HamburgerIcon from "assets/Hamburger1.svg";
 import NavDrawer from "components/NavDrawer";
 
-export default function Navbar() {
-  const [openDrawer, setOpenDrawer] = React.useState(false);
-
+export default function Navbar({allowScroll,disallowScroll}) {
+const [openDrawer, setOpenDrawer] = React.useState(false);
+const openDrawerHandler = () => { disallowScroll();setOpenDrawer(true);}
+const closeDrawerHandler = () => { setOpenDrawer(false);allowScroll();}
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" elevation={0} color="transparent">
@@ -103,7 +104,7 @@ export default function Navbar() {
               edge="start"
               color="inherit"
               aria-label="menu"
-              onClick={() => setOpenDrawer(true)}
+              onClick={openDrawerHandler}
             >
               <Box
                 sx={{
@@ -114,7 +115,7 @@ export default function Navbar() {
               ></Box>
             </IconButton>
             <NavDrawer
-              closeFunc={() => setOpenDrawer(false)}
+            closeFunc={closeDrawerHandler}
               open={openDrawer}
             />
           </Box>

@@ -1,4 +1,4 @@
-import { Backdrop, Drawer, IconButton } from "@mui/material";
+import { Drawer, IconButton } from "@mui/material";
 import React from "react";
 import Cross from "assets/Cross.svg";
 import Discord from "assets/DiscordWhite.svg";
@@ -8,6 +8,7 @@ import { Box } from "@mui/system";
 const NavDrawer = ({ closeFunc, open }) => {
   return (
     <Drawer
+    className="modal"
     variant="persistent"
     transitionDuration={300}
       anchor={"right"}
@@ -17,7 +18,6 @@ const NavDrawer = ({ closeFunc, open }) => {
       open={open}
       onClose={() => closeFunc()}
     >
-      <Backdrop>
       <Box sx={{ flexGrow: 1 }}>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box
@@ -146,7 +146,6 @@ const NavDrawer = ({ closeFunc, open }) => {
           ></Box>
         </Box>
       </Box>
-      </Backdrop>
     </Drawer>
   );
 };
