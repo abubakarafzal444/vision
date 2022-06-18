@@ -64,7 +64,6 @@ const JoinUsSection = () => {
               marginRight: "5px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              filter: "invert(100%)",
               backgroundImage: `url(${Discord}) `,
             }}
           >
@@ -89,7 +88,6 @@ const JoinUsSection = () => {
               marginRight: "5px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              filter: "invert(100%)",
               backgroundImage: `url(${Twitter}) `,
             }}
           >

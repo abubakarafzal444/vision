@@ -66,7 +66,6 @@ const NavDrawer = ({ closeFunc, open }) => {
                   height: "20px",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
-                  filter: "invert(100%)",
                   backgroundImage: `url(${Cross}) `,
                   
                 }}
@@ -127,7 +126,6 @@ const NavDrawer = ({ closeFunc, open }) => {
               marginRight: "42px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              filter: "invert(100%)",
               backgroundImage: `url(${Discord}) `,
               cursor: "pointer",
             }}
@@ -139,7 +137,6 @@ const NavDrawer = ({ closeFunc, open }) => {
               height: "31px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              filter: "invert(100%)",
               backgroundImage: `url(${Twitter}) `,
               cursor: "pointer",
             }}
