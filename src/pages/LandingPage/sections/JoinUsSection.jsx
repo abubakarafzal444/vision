@@ -7,9 +7,9 @@ import Twitter from "assets/Twitter.svg";
 const JoinUsSection = () => {
   return (
     <Box id="join-us-section" component="section" sx={{  
-     backgroundImage: `url(${stripeImg})`,
-    backgroundPosition: { xs: "center" },
-    backgroundSize: { xs: "cover" },
+    // backgroundImage: `url(${stripeImg})`,
+    // backgroundPosition: { xs: "center" },
+    // backgroundSize: { xs: "cover" },
     marginTop: { xs: "100px", sm: "unset" },}}>
     <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
 
@@ -19,7 +19,7 @@ const JoinUsSection = () => {
         alignItems: "center",
         flexDirection: "column",
         marginTop: { sm: "180px", xs: "77px" },
-        // background: `transparent url(${stripeImg}) no-repeat right 20% top -48px`,
+        background: `transparent url(${stripeImg}) no-repeat right 20% top -48px`,
       }}
     >
       <Box sx={{ position: "relative" }}>

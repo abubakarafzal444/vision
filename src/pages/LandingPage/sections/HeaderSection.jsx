@@ -13,7 +13,7 @@ const HeaderSection = () => {
       id="header-section"
       component="header"
       sx={{
-        backgroundImage: `url(${stripeImg})`,
+        // backgroundImage: `url(${stripeImg})`,
         backgroundPosition: { xs: "center" },
         backgroundSize: { xs: "cover" },
       }}
@@ -93,6 +93,8 @@ const HeaderSection = () => {
                 textTransform: "unset",
                 padding: "0",
                 display: "flex",
+                transition: "all 0.3s ease-out;",
+
                 justifyContent: "space-between",
                 paddingLeft: { sm: "35px", xs: "105px" },
                 paddingRight: { sm: "40px", xs: "104px" },
@@ -104,7 +106,7 @@ const HeaderSection = () => {
                   paddingLeft: { sm: "85px", xs: "100px" },
                   paddingRight: "15px",
                   fontSize: "19px !important",
-                  transition: "all 0.4s ease-out;",
+                  transition: "all 0.3s ease-out;",
                 },
               }}
             >
@@ -137,7 +139,7 @@ const HeaderSection = () => {
           <Box
             sx={{
               height: { md: "819px", sm: "580px" },
-              // backgroundImage: `url(${stripeImg})`,
+               backgroundImage: `url(${stripeImg})`,
               backgroundPosition: { xs: "center" },
               marginTop: { xs: "45px", sm: "unset" },
             }}

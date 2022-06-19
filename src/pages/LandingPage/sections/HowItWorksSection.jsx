@@ -143,37 +143,6 @@ const HowItWorksSection = () => {
                 </Box>
               </Box>
             </Box>
-            {/* <Button
-              
-              variant="outlined"
-              sx={{
-                maxWidth:"170px",
-                height: "60px",
-                paddingX:"25px",
-                left:"50px",
-                border: "1px solid #A29BFF",
-                borderRadius: "145px",
-                font: {
-                  sm: "normal normal 600 18px/25px Montserrat,sans-serif",
-                  xs: "normal normal 600 20px Montserrat,sans-serif",
-                },
-                marginTop: { sm: "65px", xs: "40px" },
-                marginLeft: "-50px",
-    
-
-                "&:hover": {
-                  // width:"220px",height:"54px",
-                  // marginBottom:"6px"
-                  // transform: "scaleX(1.15)",
-                  paddingX:"35px",
-
-                  maxWidth:"200px",
-                },
-                
-              }}
-            >
-              Start now
-            </Button> */}
              <Button
               
               variant="outlined"
@@ -191,6 +160,8 @@ const HowItWorksSection = () => {
                 },
                 marginTop: { sm: "65px", xs: "40px" },
                 marginLeft: "-100px",
+                transition: "all 0.3s ease-out;",
+
                 "&:hover": {
                    transform: {sm:"scaleX(1.15)"}, 
                    maxWidth:{sm:"170px",xs:"200px"},
@@ -199,7 +170,9 @@ const HowItWorksSection = () => {
                    background: "#A29BFF 0% 0% no-repeat padding-box;",
                    boxShadow:"0px 3px 30px #00DCFF7D;",
                    border:"1px solid #A29BFF",
-                   color:"#0e0c29"
+                   color:"#0e0c29",
+                   transition: "all 0.4s ease-out;",
+
                 },
                 
               }}

@@ -79,7 +79,7 @@ const NavDrawer = ({ closeFunc, open }) => {
         </Box>
         <Box className="drawer-gradient" sx={{position:"absolute",maxWidth:"100vw",maxHeight:"100vh",minWidth:"100vw",minHeight:"100vh"}}></Box>
         <Box sx={{ marginY: "164px", marginLeft: "38px",position:"relative",zIndex:"3"}}>
-        <Link activeClass="active" smooth spy to="feature-section">
+        <Link activeClass="active" offset={-50} smooth spy to="feature-section">
           <Box
             component="p"
             sx={{
@@ -95,7 +95,7 @@ const NavDrawer = ({ closeFunc, open }) => {
             Features
           </Box>
           </Link>
-          <Link activeClass="active" smooth spy to="how-it-works-section">
+          <Link activeClass="active" smooth spy offset={150} to="how-it-works-section">
 
           <Box
             component="p"

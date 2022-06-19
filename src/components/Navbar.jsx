@@ -6,15 +6,13 @@ import HamburgerIcon from "assets/Hamburger1.svg";
 import NavDrawer from "components/NavDrawer";
 import { Link } from "react-scroll";
 
-export default function Navbar({ allowScroll, disallowScroll }) {
+export default function Navbar() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
   const openDrawerHandler = () => {
-    disallowScroll();
     setOpenDrawer(true);
   };
   const closeDrawerHandler = () => {
     setOpenDrawer(false);
-    allowScroll();
   };
   return (
     <Box sx={{ flexGrow: 1, maxWidth: "1920px", marginX: "auto" }}>
@@ -56,7 +54,7 @@ export default function Navbar({ allowScroll, disallowScroll }) {
               marginTop: "51px",
             }}
           >
-            <Link activeClass="active" smooth spy to="feature-section">
+            <Link activeClass="active" offset={-100} smooth spy to="feature-section">
               <Box
                 component="p"
                 sx={{
@@ -72,7 +70,7 @@ export default function Navbar({ allowScroll, disallowScroll }) {
                 Features
               </Box>
             </Link>
-            <Link activeClass="active" smooth spy to="how-it-works-section">
+            <Link activeClass="active" offset={-50} smooth spy to="how-it-works-section">
               <Box
                 component="p"
                 sx={{

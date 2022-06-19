@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  /* backgroundImage: {
+    sm: `url(${lgBackground})`,
+    xs: `url(${smBackground})`,
+  }, */
+  /* background-image: url('assets/BG.png');
+  background-size: cover;
+  background-size: cover; */
 }
 body {
   margin: 0;
@@ -11,6 +18,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('assets/BG@2x.png');
+  background-size: cover;  
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url('assets/BG.png');
+  }
 }
 
 code {
@@ -39,7 +53,6 @@ code {
     rgba(9, 7, 33, 1) 95%,
     rgba(4, 2, 26, 1) 100%
   );
-  filter: blur(500px);
 }
 
 .list-wrapper {
