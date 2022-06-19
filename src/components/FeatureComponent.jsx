@@ -7,7 +7,6 @@ const FeatureComponent = ({
   heading,
   description,
   link,
-  animate,
 }) => {
   const [showCircle,setShowCircle]=React.useState(false);
   return (
@@ -15,7 +14,7 @@ const FeatureComponent = ({
     marginX: {sm:"unset",xs:"35px" },
     position:"relative"
     }}>
-      {animate&&<Box className="feature-gradient"sx={{opacity:{md:showCircle?"1":"0",xs:"0"}}}></Box>}
+      {<Box className="feature-gradient"sx={{opacity:{md:showCircle?"1":"0",xs:"0"}}}></Box>}
       <Box
         sx={{
           width: "55px",
