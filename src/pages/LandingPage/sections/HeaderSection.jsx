@@ -13,7 +13,8 @@ const HeaderSection = () => {
      backgroundImage: `url(${stripeImg})`,
     backgroundPosition: { xs: "center" },
     backgroundSize: { xs: "cover" },
-    marginTop: { xs: "100px", sm: "unset" },}}>
+ }}
+    >
     <Box sx={{maxWidth:"1920px",marginX:"auto"}}>
     <Box
       component="header"
@@ -137,7 +138,7 @@ const HeaderSection = () => {
           height: { md: "819px", sm: "580px" },
           // backgroundImage: `url(${stripeImg})`,
           backgroundPosition: { xs: "center" },
-          marginTop: { xs: "100px", sm: "unset" },
+          marginTop: { xs: "100px", sx: "40px" },
         }}
       >
         

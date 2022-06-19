@@ -10,7 +10,7 @@ const [openDrawer, setOpenDrawer] = React.useState(false);
 const openDrawerHandler = () => { disallowScroll();setOpenDrawer(true);}
 const closeDrawerHandler = () => { setOpenDrawer(false);allowScroll();}
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 , maxWidth:"1920px",marginX:"auto"}}>
       <AppBar position="static" elevation={0} color="transparent">
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box
