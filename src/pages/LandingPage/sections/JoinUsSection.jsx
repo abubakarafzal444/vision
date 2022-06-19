@@ -19,10 +19,10 @@ const JoinUsSection = () => {
         <Box className="circle-parent join-now-parent"></Box>
         <Box className="circle-child join-now-child"></Box>
         <Box
-        component="h3"
+          component="h3"
           sx={{
             position: "relative",
-            left:{md:"unset",xs:"40px"},
+            left: { md: "unset", xs: "40px" },
             font: {
               sm: "normal normal 600 45px/55px Montserrat,sans-serif",
               xs: "normal normal 600 30px Montserrat,sans-serif",
@@ -50,26 +50,39 @@ const JoinUsSection = () => {
           cpmponent="p"
           sx={{
             color: "#E4E6FD",
-            marginRight: { sm: "65px" },
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
-            display:"flex",
-            cursor:"pointer"
+            display: "flex",
+            cursor: "pointer",
+            marginRight: { sm: "65px" },
           }}
         >
           <Box
             sx={{
               width: "32px",
               height: "37px",
+              color: "#A29BFF",
               marginRight: "5px",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundImage: `url(${Discord}) `,
             }}
+          ></Box>
+          <Box
+            className="animated-link-btn"
+            component="span"
+            sx={{
+              minWidth: { sm: "180px" },
+              "&:hover": {
+                color: "#020311",
+                textDecorationColor: "#020311",
+                fontWeight: "bold",
+              },
+            }}
           >
+            project_name
           </Box>
-          project_name
         </Box>
         <Box
           cpmponent="p"
@@ -78,9 +91,8 @@ const JoinUsSection = () => {
             textDecoration: "underline",
             zIndex: "15",
             position: "relative",
-            display:"flex",
-            cursor:"pointer"
-
+            display: "flex",
+            cursor: "pointer",
           }}
         >
           <Box
@@ -93,9 +105,21 @@ const JoinUsSection = () => {
               backgroundRepeat: "no-repeat",
               backgroundImage: `url(${Twitter}) `,
             }}
+          ></Box>
+          <Box
+            className="animated-link-btn"
+            component="span"
+            sx={{
+              minWidth: { sm: "180px" },
+              "&:hover": {
+                color: "#020311",
+                textDecorationColor: "#020311",
+                fontWeight: "bold",
+              },
+            }}
           >
+            project_name
           </Box>
-          project_name
         </Box>
       </Box>
       <Box

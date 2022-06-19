@@ -10,7 +10,7 @@ const NavDrawer = ({ closeFunc, open }) => {
     <Drawer
     className="modal"
     variant="persistent"
-    transitionDuration={300}
+    transitionDuration={500}
       anchor={"right"}
       PaperProps={{
         sx: { width: "100%", opacity: "0.9", backgroundColor: "#010017",overflow: "hidden" },
