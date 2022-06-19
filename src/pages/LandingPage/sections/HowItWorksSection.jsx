@@ -166,7 +166,6 @@ const HowItWorksSection = () => {
                    transform: {sm:"scaleX(1.15)"}, 
                    maxWidth:{sm:"170px",xs:"200px"},
                    minWidth:{xs:"200px",sm:"unset"},
-                   transition:"all 0.3s ease-out;",
                    background: "#A29BFF 0% 0% no-repeat padding-box;",
                    boxShadow:"0px 3px 30px #00DCFF7D;",
                    border:"1px solid #A29BFF",
