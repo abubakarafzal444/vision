@@ -9,7 +9,8 @@ const HowItWorksSection = () => {
   return (
     <Box id="how-it-works-section"component="section" sx={{ maxWidth: "1920px", marginX: "auto" }}>
 
-    <Box>
+    <Box sx={{  position: "relative",
+            bottom: { sm: "40px", xs: "100px", md: "20px" },}}>
       <Box
         sx={{
           flexGrow: 1,
