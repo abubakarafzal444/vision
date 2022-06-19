@@ -138,7 +138,7 @@ const HeaderSection = () => {
           height: { md: "819px", sm: "580px" },
           // backgroundImage: `url(${stripeImg})`,
           backgroundPosition: { xs: "center" },
-          marginTop: { xs: "100px", sx: "40px" },
+          marginTop: { xs: "45px", sm: "unset" },
         }}
       >
         
