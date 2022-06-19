@@ -80,73 +80,102 @@ const featureArray = [
 const FeatureSection = () => {
   return (
     <>
-      <Box
-        sx={{
-          width: {sm:"240px"},
-          height: {sm:"240px",xs:"170px"},
-           marginLeft: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },
-           display:"flex",
-           justifyContent:"center",
-           marginTop:{sm:"100px",md:"0px",xs:"75px"},
-
-      
-        }}
-      >
-
-<Box sx={{ position: "relative" }}>
-              <Box className="circle-parent features-h1"></Box>
-              <Box className="circle-child"></Box>
-              <Box
-                component="h2"
-                sx={{
-                  font: {
-                    sm: "normal normal 600 45px/55px Montserrat,sans-serif",
-                    xs: "normal normal 600 30px Montserrat,sans-serif",
-                  },
-                  marginBottom: { sm: "77px", xs: "70px" },
-                  position: "relative",
-                  zIndex: "6",
-                  color:"#A29BFF"
-                }}
-              >
+      <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
+        <Box
+          sx={{
+            width: { sm: "240px" },
+            height: { sm: "240px", xs: "170px" },
+            marginLeft: {
+              lg: "40px",
+              sm: "20px",
+              xs: "10px",
+              md: "50px",
+              xl: "180px",
+            },
+            display: "flex",
+            justifyContent: "center",
+            marginTop: { sm: "100px", md: "0px", xs: "75px" },
+          }}
+        >
+          <Box sx={{ position: "relative" }}>
+            <Box className="circle-parent features-h1"></Box>
+            <Box className="circle-child"></Box>
+            <Box
+              component="h2"
+              sx={{
+                font: {
+                  sm: "normal normal 600 45px/55px Montserrat,sans-serif",
+                  xs: "normal normal 600 30px Montserrat,sans-serif",
+                },
+                marginBottom: { sm: "77px", xs: "70px" },
+                position: "relative",
+                zIndex: "6",
+                color: "#A29BFF",
+              }}
+            >
               Features!
-              </Box>
             </Box>
-
-      </Box>
-
-      <Box
-        sx={{ flexGrow: 1, marginX: { lg: "40px", sm: "20px", xs: "10px",md:"50px",xl:"180px" },position: "relative",bottom:{sm:"40px",xs:"100px",md:"20px"} }}
-      >
-        <Grid container spacing={3} >
-          {featureArray.slice(0, 4).map((feature, index) => (
-            <Grid key={index} item xs={12} sm={6} md={6} lg={3} sx={{display:"flex",justifyContent:"center"}}>
-              <FeatureComponent
-                isKey={index === 0 && true}
-                icon={feature.icon}
-                heading={feature.heading}
-                description={feature.description}
-                link={feature.link}
-                animate={feature.animate}
-              />
-            </Grid>
-          ))}
-            </Grid>
-            <Grid container spacing={3}>
-          {featureArray.slice(4, 8).map((feature, index) => (
-            <Grid key={index} item xs={12} sm={6} md={6} lg={3}  sx={{display:"flex",justifyContent:"center"}}>
-              <FeatureComponent
-                isKey={index === 0 && true}
-                icon={feature.icon}
-                heading={feature.heading}
-                description={feature.description}
-                link={feature.link}
-                animate={feature.animate}
-              />
-            </Grid>
-          ))}
-            </Grid>
-      
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            flexGrow: 1,
+            marginX: {
+              lg: "40px",
+              sm: "20px",
+              xs: "10px",
+              md: "50px",
+              xl: "180px",
+            },
+            position: "relative",
+            bottom: { sm: "40px", xs: "100px", md: "20px" },
+          }}
+        >
+          <Grid container spacing={3}>
+            {featureArray.slice(0, 4).map((feature, index) => (
+              <Grid
+                key={index}
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <FeatureComponent
+                  isKey={index === 0 && true}
+                  icon={feature.icon}
+                  heading={feature.heading}
+                  description={feature.description}
+                  link={feature.link}
+                  animate={feature.animate}
+                />
+              </Grid>
+            ))}
+          </Grid>
+          <Grid container spacing={3}>
+            {featureArray.slice(4, 8).map((feature, index) => (
+              <Grid
+                key={index}
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={3}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <FeatureComponent
+                  isKey={index === 0 && true}
+                  icon={feature.icon}
+                  heading={feature.heading}
+                  description={feature.description}
+                  link={feature.link}
+                  animate={feature.animate}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Box>
     </>
   );

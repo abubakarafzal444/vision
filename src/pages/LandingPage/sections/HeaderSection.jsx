@@ -9,6 +9,12 @@ import centerImgMobile from "assets/23123@2x.png";
 import BuyWeth2 from "assets/BuyWETH2.png";
 const HeaderSection = () => {
   return (
+    <Box sx={{  
+     backgroundImage: `url(${stripeImg})`,
+    backgroundPosition: { xs: "center" },
+    backgroundSize: { xs: "cover" },
+    marginTop: { xs: "100px", sm: "unset" },}}>
+    <Box sx={{maxWidth:"1920px",marginX:"auto"}}>
     <Box
       component="header"
       sx={{
@@ -129,11 +135,12 @@ const HeaderSection = () => {
       <Box
         sx={{
           height: { md: "819px", sm: "580px" },
-          backgroundImage: `url(${stripeImg})`,
+          // backgroundImage: `url(${stripeImg})`,
           backgroundPosition: { xs: "center" },
           marginTop: { xs: "100px", sm: "unset" },
         }}
       >
+        
         <Box
           sx={{
             display: "flex",
@@ -181,6 +188,8 @@ const HeaderSection = () => {
           ></Box>
         </Box>
       </Box>
+    </Box>
+    </Box>
     </Box>
   );
 };

@@ -7,6 +7,8 @@ import { Button } from "@mui/material";
 
 const HowItWorksSection = () => {
   return (
+    <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
+
     <Box>
       <Box
         sx={{
@@ -207,6 +209,7 @@ const HowItWorksSection = () => {
           </Box>
         </Box>
       </Box>
+    </Box>
     </Box>
   );
 };

@@ -9,7 +9,7 @@ import JoinUsSection from "pages/LandingPage/sections/JoinUsSection";
 
 const LandingPage = () => {
   return (
-    <Box sx={{maxWidth:"1920px",marginX:"auto"}}>
+    <Box>
    
       <HeaderSection />
       <FeatureSection />
