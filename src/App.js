@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import lgBackground from "assets/BG.png";
 import smBackground from "assets/BG@2x.png";
 import { useState } from "react";
-import Navbar from "pages/LandingPage/sections/Navbar";
+import Navbar from "components/Navbar";
 function App() {
   const [scrollAllowed, setScrollAllowed] = useState(true);
   const allowScroll = () => setScrollAllowed(true);
