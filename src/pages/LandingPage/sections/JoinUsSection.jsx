@@ -75,9 +75,8 @@ const JoinUsSection = () => {
             sx={{
               minWidth: { sm: "180px" },
               "&:hover": {
-                color: "#020311",
-                textDecorationColor: "#020311",
-                fontWeight: "bold",
+                color: {sm:"#020311"},
+                fontWeight: {sm:"bold"},
               },
             }}
           >
@@ -112,9 +111,8 @@ const JoinUsSection = () => {
             sx={{
               minWidth: { sm: "180px" },
               "&:hover": {
-                color: "#020311",
-                textDecorationColor: "#020311",
-                fontWeight: "bold",
+                color: {sm:"#020311"},
+                fontWeight: {sm:"bold"},
               },
             }}
           >

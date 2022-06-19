@@ -159,11 +159,14 @@ code {
   transition: all 0.3s ease-out;
 }
 
-.animated-link-btn{
-  background: linear-gradient(to left, transparent 50%, #A29BFF 50%) right;
-  background-size: 200%;
-  transition: .3s ease-in;
-}
-.animated-link-btn:hover{
-  background-position: left;
+
+@media screen and (min-width: 600px) {
+  .animated-link-btn{
+    background: linear-gradient(to left, transparent 50%, #A29BFF 50%) right;
+    background-size: 200%;
+    transition: .3s ease-in;
+  }
+  .animated-link-btn:hover{
+    background-position: left;
+  }
 }
