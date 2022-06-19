@@ -16,8 +16,8 @@ const JoinUsSection = () => {
       }}
     >
       <Box sx={{ position: "relative" }}>
-        <Box className="circle-parent join-now-parent"></Box>
-        <Box className="circle-child join-now-child"></Box>
+        <Box className="circle-parent"></Box>
+        <Box className="circle-child"></Box>
         <Box
           component="h3"
           sx={{
@@ -56,6 +56,27 @@ const JoinUsSection = () => {
             display: "flex",
             cursor: "pointer",
             marginRight: { sm: "65px" },
+            display: "flex",
+            alignItems: "center",
+
+
+            "& .animated-link-btn": {
+              minWidth: { sm: "180px" },
+              background: {
+                sm: "linear-gradient(to left, transparent 50%, #A29BFF 50%) right",
+              },
+              backgroundSize: { sm: "200%" },
+              transition: { sm: ".3s ease-in" },
+              paddingTop: { sm: "4px" },
+              height:"100%",
+            },
+            "&:hover": {
+              "& .animated-link-btn": {
+                backgroundPosition: "left",
+                color: { sm: "#020311" },
+                fontWeight: { sm: "bold" },
+              },
+            },
           }}
         >
           <Box
@@ -67,18 +88,28 @@ const JoinUsSection = () => {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundImage: `url(${Discord}) `,
+              
+            "& .animated-link-btn": {
+              minWidth: { sm: "180px" },
+              background: {
+                sm: "linear-gradient(to left, transparent 50%, #A29BFF 50%) right",
+              },
+              backgroundSize: { sm: "200%" },
+              transition: { sm: ".3s ease-in" },
+           
+            },
+            "&:hover": {
+              "& .animated-link-btn": {
+                backgroundPosition: "left",
+                color: { sm: "#020311" },
+                fontWeight: { sm: "bold" },
+              },
+            },
             }}
           ></Box>
           <Box
             className="animated-link-btn"
             component="span"
-            sx={{
-              minWidth: { sm: "180px" },
-              "&:hover": {
-                color: {sm:"#020311"},
-                fontWeight: {sm:"bold"},
-              },
-            }}
           >
             project_name
           </Box>
@@ -92,6 +123,25 @@ const JoinUsSection = () => {
             position: "relative",
             display: "flex",
             cursor: "pointer",
+            alignItems: "center",
+            "& .animated-link-btn": {
+              minWidth: { sm: "180px" },
+              background: {
+                sm: "linear-gradient(to left, transparent 50%, #A29BFF 50%) right",
+              },
+              backgroundSize: { sm: "200%" },
+              transition: { sm: ".3s ease-in" },
+              paddingTop: { sm: "4px" },
+              height:"100%",
+
+            },
+            "&:hover": {
+              "& .animated-link-btn": {
+                backgroundPosition: "left",
+                color: { sm: "#020311" },
+                fontWeight: { sm: "bold" },
+              },
+            },
           }}
         >
           <Box
@@ -108,13 +158,6 @@ const JoinUsSection = () => {
           <Box
             className="animated-link-btn"
             component="span"
-            sx={{
-              minWidth: { sm: "180px" },
-              "&:hover": {
-                color: {sm:"#020311"},
-                fontWeight: {sm:"bold"},
-              },
-            }}
           >
             project_name
           </Box>
