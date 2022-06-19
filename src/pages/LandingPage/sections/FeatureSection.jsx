@@ -17,7 +17,6 @@ const featureArray = [
     description:
       "PROJECT_NAME does not collect or store any of your personal data. Just connect your wallet and start trading",
     link: "",
-    animate: true,
   },
   {
     icon: lock,
@@ -25,7 +24,6 @@ const featureArray = [
     description:
       "The collateral mechanism is designed in a way to only make it viable for honest traders to use our platform",
     link: "learn more about collateral",
-    animate: true,
   },
   {
     icon: decentralized,
@@ -33,7 +31,6 @@ const featureArray = [
     description:
       "PROJECT_NAME is powered by smart contracts and does not need any centralized authority",
     link: "gitbook",
-    animate: true,
   },
   {
     icon: Anonymous,
@@ -41,7 +38,6 @@ const featureArray = [
     description:
       "We do not require any identity verification. Get started right away from anywhere in the world",
     link: "",
-    animate: true,
   },
   {
     icon: ui,
@@ -49,7 +45,6 @@ const featureArray = [
     description:
       "We have designed the UI to be simple and familiar. P2P trading has never been easier",
     link: "",
-    animate: false,
   },
   {
     icon: manymany,
@@ -57,7 +52,6 @@ const featureArray = [
     description:
       "Support for all the most popular fiat currencies and cryptocurrencies",
     link: "Multichain",
-    animate: false,
   },
   {
     icon: chain,
@@ -65,7 +59,6 @@ const featureArray = [
     description:
       "PROJECT_NAME is currently active on Ethereum, Binance Smart Chain and Aurora",
     link: "none",
-    animate: false,
   },
   {
     icon: chart,
@@ -73,14 +66,17 @@ const featureArray = [
     description:
       "There are no limits or restrictions on how much you can trade as long as you have the required collateral",
     link: "",
-    animate: false,
   },
 ];
 
 const FeatureSection = () => {
   return (
     <>
-      <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
+      <Box
+        id="feature-section"
+        component="section"
+        sx={{ maxWidth: "1920px", marginX: "auto" }}
+      >
         <Box
           sx={{
             width: { sm: "240px" },
@@ -148,7 +144,6 @@ const FeatureSection = () => {
                   heading={feature.heading}
                   description={feature.description}
                   link={feature.link}
-                  animate={feature.animate}
                 />
               </Grid>
             ))}

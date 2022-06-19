@@ -6,7 +6,7 @@ import Twitter from "assets/Twitter.svg";
 
 const JoinUsSection = () => {
   return (
-       <Box sx={{  
+    <Box id="join-us-section" component="section" sx={{  
      backgroundImage: `url(${stripeImg})`,
     backgroundPosition: { xs: "center" },
     backgroundSize: { xs: "cover" },
