@@ -4,6 +4,7 @@ import Cross from "assets/Cross.svg";
 import Discord from "assets/DiscordWhite.svg";
 import Twitter from "assets/TwitterWhite.svg";
 import { Box } from "@mui/system";
+import { Link } from "react-scroll";
 
 const NavDrawer = ({ closeFunc, open }) => {
   return (
@@ -78,6 +79,7 @@ const NavDrawer = ({ closeFunc, open }) => {
         </Box>
         <Box className="drawer-gradient" sx={{position:"absolute",maxWidth:"100vw",maxHeight:"100vh",minWidth:"100vw",minHeight:"100vh"}}></Box>
         <Box sx={{ marginY: "164px", marginLeft: "38px",position:"relative",zIndex:"3"}}>
+        <Link activeClass="active" smooth spy to="feature-section">
           <Box
             component="p"
             sx={{
@@ -88,11 +90,16 @@ const NavDrawer = ({ closeFunc, open }) => {
               marginRight: "50px",
               cursor: "pointer",
             }}
+            onClick={() => closeFunc()}
           >
             Features
           </Box>
+          </Link>
+          <Link activeClass="active" smooth spy to="how-it-works-section">
+
           <Box
             component="p"
+            onClick={() => closeFunc()}
             sx={{
               font: "normal normal 600 16px Montserrat,sans-serif",
               borderBottom: "1px solid #575DA6",
@@ -104,8 +111,11 @@ const NavDrawer = ({ closeFunc, open }) => {
           >
             How does it work
           </Box>
+          </Link>
+          <Link activeClass="active" smooth spy to="join-us-section">
           <Box
             component="p"
+            onClick={() => closeFunc()}
             sx={{
               font: "normal normal 600 16px Montserrat,sans-serif",
               borderBottom: "1px solid #575DA6",
@@ -117,6 +127,7 @@ const NavDrawer = ({ closeFunc, open }) => {
           >
             Join us
           </Box>
+          </Link>
 
         </Box>
       

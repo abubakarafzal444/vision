@@ -10,7 +10,6 @@ import JoinUsSection from "pages/LandingPage/sections/JoinUsSection";
 const LandingPage = () => {
   return (
     <Box>
-   
       <HeaderSection />
       <FeatureSection />
       <HowItWorksSection />

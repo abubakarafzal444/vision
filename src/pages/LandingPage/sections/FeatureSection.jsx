@@ -72,7 +72,11 @@ const featureArray = [
 const FeatureSection = () => {
   return (
     <>
-      <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
+      <Box
+        id="feature-section"
+        component="section"
+        sx={{ maxWidth: "1920px", marginX: "auto" }}
+      >
         <Box
           sx={{
             width: { sm: "240px" },

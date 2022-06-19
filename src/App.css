@@ -76,7 +76,7 @@ code {
   font-weight: 700;
 }
 .list-text {
-  font-weight: 400;
+  font: normal normal 500 20px/25px Montserrat;
 }
 .purple-line {
   border-left: 1px dashed #4e517b;

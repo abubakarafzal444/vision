@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 
 const HowItWorksSection = () => {
   return (
-    <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
+    <Box id="how-it-works-section"component="section" sx={{ maxWidth: "1920px", marginX: "auto" }}>
 
     <Box>
       <Box
