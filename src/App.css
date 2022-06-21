@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
-
 }
 @font-face {
   font-family: "Montserrat";
@@ -11,15 +10,16 @@
 }
 body {
   margin: 0;
-  font-family:Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('assets/BG@2x.png');
-  background-size: cover;  
+  background-image: url("assets/BG@2x.png");
+  background-size: cover;
+  background-color: #050717 !important;
 }
 @media screen and (min-width: 600px) {
   body {
-    background-image: url('assets/BG.png');
+    background-image: url("assets/BG.png");
   }
 }
 
@@ -30,7 +30,6 @@ code {
 .App {
   display: flex;
   justify-content: center;
-  background-color: #050717;
 }
 
 .drawer-gradient {
@@ -86,8 +85,8 @@ code {
   font-weight: 700;
 }
 .list-text {
-  font-size:  20px;
-  color:#E4E6FD;
+  font-size: 20px;
+  color: #e4e6fd;
   font-weight: 500;
 }
 .purple-line {
@@ -152,6 +151,18 @@ code {
   border-radius: 50%;
   position: absolute;
 }
+.img-gradient {
+  background: rgb(90, 87, 135);
+  background: linear-gradient(
+    141deg,
+    rgba(90, 87, 135, 1) 12%,
+    rgba(14, 12, 41, 1) 72%,
+    rgba(9, 7, 33, 1) 85%,
+    rgba(4, 2, 26, 1) 96%
+  );
+  border-radius: 50%;
+  position: absolute;
+}
 .feature-gradient {
   background: transparent linear-gradient(180deg, #39f5bc 0%, #11112a00 100%) 0%
     0% no-repeat padding-box;
@@ -160,10 +171,8 @@ code {
   transform: matrix(0.19, -0.98, 0.98, 0.19, 0, 0);
   position: absolute;
   border-radius: 50%;
-  top:40px;
-  left:-55px;
+  top: 40px;
+  left: -55px;
   animation: auto;
   transition: all 0.3s ease-out;
 }
-
-

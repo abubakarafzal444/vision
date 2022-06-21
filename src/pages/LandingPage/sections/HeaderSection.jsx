@@ -50,7 +50,7 @@ const HeaderSection = () => {
                   sm: "65px",
                   xs: "40px",
                 },
-                fontWeight:"bold",
+                fontWeight: "bold",
                 marginTop: { sm: "130px", xs: "90px" },
                 textAlign: "center",
                 width: { md: "100%", sm: "85%", xs: "88%" },
@@ -72,7 +72,7 @@ const HeaderSection = () => {
                   sm: "18px",
                   xs: "16px",
                 },
-                fontWeight:"300",
+                fontWeight: "300",
                 position: "relative",
                 zIndex: "6",
                 marginTop: "10px",
@@ -120,7 +120,7 @@ const HeaderSection = () => {
                     sm: "21px",
                     xs: "18px",
                   },
-                  fontWeight:"600",
+                  fontWeight: "600",
                   color: "#08061C",
                   position: "relative",
                   zIndex: "8",
@@ -144,9 +144,9 @@ const HeaderSection = () => {
           <Box
             sx={{
               height: { md: "819px", sm: "580px" },
-               backgroundImage: `url(${stripeImg})`,
-              backgroundPosition: { sm: "center",xs:"right 50% top 50%" },
-              backgroundSize: { sm: "unset",xs:"cover" },
+              backgroundImage: `url(${stripeImg})`,
+              backgroundPosition: { sm: "right 31% top 50%", xs: "right 50% top 50%" },
+              backgroundSize: { sm: "unset", xs: "cover" },
               marginTop: { xs: "45px", sm: "unset" },
             }}
           >
@@ -172,19 +172,29 @@ const HeaderSection = () => {
             >
               <Box
                 sx={{
-                  backgroundImage: { xs: `url(${BuySell2})` },
-                  backgroundRepeat: "no-repeat",
-                  opacity: "1",
-                  height: { md: "369px", sm: "300px" },
-                  minWidth: { md: "307px", sm: "245px" },
-                  zIndex: "5",
                   marginLeft: { lg: "12%", md: "4%" },
-                  marginTop: "210px",
-                  backgroundSize: "contain",
-                  // display:{xs:"none",md:"unset"}
+                  marginTop: "255px",
+                  position: "relative",
+                  zIndex: "7",
                 }}
-              ></Box>
-
+              >
+                <Box className="img-gradient" sx={{ left: "-27px",top:"-31px",width:"100px",height:"100px",display:{xs:"none",sm:"unset"} }}></Box>
+                <Box
+                  sx={{
+                    backgroundImage: { xs: `url(${BuySell2})` },
+                    backgroundRepeat: "no-repeat",
+                    opacity: "1",
+                    height: { md: "369px", sm: "300px" },
+                    minWidth: { md: "307px", sm: "245px" },
+                    zIndex: "8",
+                    position: "relative",
+                    backgroundSize: "contain",
+                    // display:{xs:"none",md:"unset"}
+                  }}
+                ></Box>
+              </Box>
+              <Box sx={{  marginRight: { lg: "6.5%", sm: "4%" },position:"relative",marginTop:"60px"}}>
+              <Box className="img-gradient" sx={{ left: "-60px",top:"-50px",width:"150px",height:"150px",display:{xs:"none",sm:"unset"} }}></Box>
               <Box
                 sx={{
                   backgroundImage: { xs: `url(${BuyWeth2})` },
@@ -193,10 +203,11 @@ const HeaderSection = () => {
                   height: { md: "409px", sm: "300px" },
                   width: { md: "520px", sm: "375px" },
                   zIndex: "5",
-                  marginRight: { lg: "6.5%", sm: "4%" },
+                  position:"relative",
                   backgroundSize: "contain",
                 }}
               ></Box>
+              </Box>
             </Box>
           </Box>
         </Box>

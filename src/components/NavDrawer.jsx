@@ -121,25 +121,21 @@ const NavDrawer = ({ closeFunc, open }) => {
       
         <Box sx={{ display: "flex", justifyContent: "center",position:"relative",zIndex:"3" }}>
           <Box
-            component="span"
+            component="img"
+            src={Discord}
             sx={{
               width: "38px",
               height: "33px",
               marginRight: "42px",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${Discord}) `,
               cursor: "pointer",
             }}
           ></Box>
           <Box
-            component="span"
+            component="img"
+            src={Twitter}
             sx={{
               width: "40px",
               height: "31px",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${Twitter}) `,
               cursor: "pointer",
             }}
           ></Box>
