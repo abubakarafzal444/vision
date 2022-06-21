@@ -74,7 +74,7 @@ export default function Navbar() {
                 Features
               </StyledMenuButton>
             </Link>
-            <Link activeClass="active" offset={-50} smooth spy to="how-it-works-section">
+            <Link activeClass="active" offset={-230} smooth spy to="how-it-works-section">
               <StyledMenuButton
                 component="p"
               >
