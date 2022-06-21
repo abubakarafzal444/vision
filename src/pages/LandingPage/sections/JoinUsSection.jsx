@@ -189,7 +189,7 @@ const JoinUsSection = () => {
             width: { sm: "unset", xs: "70%" },
           }}
         >
-          Copyright 2022 Projekt_name. all rights reserved
+          Copyright 2022 Project_name. all rights reserved
         </Box>
       </Box>
     </Box>
