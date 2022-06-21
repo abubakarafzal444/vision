@@ -104,10 +104,11 @@ export default function Navbar() {
               onClick={openDrawerHandler}
             >
               <Box
+              component="img"
+              src={HamburgerIcon}
                 sx={{
                   width: "28px",
                   height: "20px",
-                  background: `url(${HamburgerIcon}) `,
                 }}
               ></Box>
             </IconButton>
