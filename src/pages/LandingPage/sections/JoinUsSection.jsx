@@ -102,6 +102,7 @@ const JoinUsSection = () => {
               },
               backgroundSize: { sm: "200%" },
               transition: { sm: ".3s ease-in" },
+            
            
             },
             "&:hover": {
@@ -109,12 +110,14 @@ const JoinUsSection = () => {
                 backgroundPosition: "left",
                 color: { sm: "#020311" },
                 fontWeight: { sm: "bold" },
+                
               },
             },
             }}
           ></Box>
           <Box
-            className="animated-link-btn"
+          sx={{  paddingBottom:"6px"}}
+          className="animated-link-btn"
             component="span"
           >
             project_name
@@ -138,7 +141,7 @@ const JoinUsSection = () => {
               backgroundSize: { sm: "200%" },
               transition: { sm: ".3s ease-in" },
               height:"100%",
-
+              paddingBottom:"6px"
             },
             "&:hover": {
               "& .animated-link-btn": {

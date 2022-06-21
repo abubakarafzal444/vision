@@ -31,9 +31,9 @@ const NavDrawer = ({ closeFunc, open }) => {
       onClose={() => closeFunc()}
     >
       <Box sx={{ flexGrow: 1, }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" ,paddingBottom:"10px"}}>
+        <Box sx={{ display: "flex", justifyContent: "space-between",alignItems:"center",paddingBottom:"6px" }}>
           <Box
-            sx={{ marginLeft: "7.3%", marginTop: { md: "27px", xs: "12px" } }}
+            sx={{ marginLeft: "7.3%", marginTop: { md: "27px" } }}
           >
             <Box
               sx={{
@@ -65,8 +65,7 @@ const NavDrawer = ({ closeFunc, open }) => {
             sx={{
               display: { xs: "flex", md: "none" },
               marginRight: "15px",
-              marginTop: "6px",
-              
+
             }}
           >
             <IconButton
