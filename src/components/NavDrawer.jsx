@@ -5,6 +5,17 @@ import Discord from "assets/DiscordWhite.svg";
 import Twitter from "assets/TwitterWhite.svg";
 import { Box } from "@mui/system";
 import { Link } from "react-scroll";
+import styled from "@emotion/styled";
+
+const StyledMenuButton = styled('p')({
+  fontSize: "16px",
+  fontWeight: "600",
+  borderBottom: "1px solid #575DA6",
+  paddingBottom: "12.5px",
+  marginBottom: "37.5px",
+  marginRight: "50px",
+  cursor: "pointer",
+});
 
 const NavDrawer = ({ closeFunc, open }) => {
   return (
@@ -26,10 +37,11 @@ const NavDrawer = ({ closeFunc, open }) => {
           >
             <Box
               sx={{
-                font: {
-                  sm: "normal normal 600 30px/37px Montserrat,sans-serif",
-                  xs: "normal normal 600 26 Montserrat,sans-serif",
+                fontSize: {
+                  sm: "30px",
+                  xs: "26px",
                 },
+                fontWeight: "600",
                 color: "#E4E6FD",
                 cursor: "pointer",
               }}
@@ -80,53 +92,29 @@ const NavDrawer = ({ closeFunc, open }) => {
         <Box className="drawer-gradient" sx={{position:"absolute",maxWidth:"100vw",maxHeight:"100vh",minWidth:"100vw",minHeight:"100vh"}}></Box>
         <Box sx={{ marginY: "164px", marginLeft: "38px",position:"relative",zIndex:"3"}}>
         <Link activeClass="active" offset={-50} smooth spy to="feature-section">
-          <Box
+          <StyledMenuButton
             component="p"
-            sx={{
-              font: "normal normal 600 16px Montserrat,sans-serif",
-              borderBottom: "1px solid #575DA6",
-              paddingBottom: "12.5px",
-              marginBottom: "37.5px",
-              marginRight: "50px",
-              cursor: "pointer",
-            }}
             onClick={() => closeFunc()}
           >
             Features
-          </Box>
+          </StyledMenuButton>
           </Link>
           <Link activeClass="active" smooth spy offset={150} to="how-it-works-section">
 
-          <Box
+          <StyledMenuButton
             component="p"
             onClick={() => closeFunc()}
-            sx={{
-              font: "normal normal 600 16px Montserrat,sans-serif",
-              borderBottom: "1px solid #575DA6",
-              paddingBottom: "12.5px",
-              marginBottom: "37.5px",
-              marginRight: "50px",
-              cursor: "pointer",
-            }}
           >
             How does it work
-          </Box>
+          </StyledMenuButton>
           </Link>
           <Link activeClass="active" smooth spy to="join-us-section">
-          <Box
+          <StyledMenuButton
             component="p"
             onClick={() => closeFunc()}
-            sx={{
-              font: "normal normal 600 16px Montserrat,sans-serif",
-              borderBottom: "1px solid #575DA6",
-              paddingBottom: "12.5px",
-              marginBottom: "37.5px",
-              marginRight: "50px",
-              cursor: "pointer",
-            }}
           >
             Join us
-          </Box>
+          </StyledMenuButton>
           </Link>
 
         </Box>

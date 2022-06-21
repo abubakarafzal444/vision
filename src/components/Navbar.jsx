@@ -5,6 +5,18 @@ import { IconButton } from "@mui/material";
 import HamburgerIcon from "assets/Hamburger1.svg";
 import NavDrawer from "components/NavDrawer";
 import { Link } from "react-scroll";
+import styled from "@emotion/styled";
+
+const StyledMenuButton = styled('p')({
+  fontSize: "19px",
+  fontWeight: "bold",
+  borderBottom: "3px solid #A29BFF",
+  paddingBottom: "7px",
+  cursor: "pointer",
+  "&:hover": {
+    color: "#A29BFF",
+  },
+});
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -23,9 +35,10 @@ export default function Navbar() {
           >
             <Box
               sx={{
-                font: {
-                  sm: "normal normal 600 30px/37px Montserrat,sans-serif",
-                  xs: "normal normal 600 26 Montserrat,sans-serif",
+                fontSize: {
+                  sm: "30px",
+                  xs: "26px",
+                  fontWeight: "600",
                 },
                 color: "#E4E6FD",
                 cursor: "pointer",
@@ -55,52 +68,25 @@ export default function Navbar() {
             }}
           >
             <Link activeClass="active" offset={-100} smooth spy to="feature-section">
-              <Box
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 Features
-              </Box>
+              </StyledMenuButton>
             </Link>
             <Link activeClass="active" offset={-50} smooth spy to="how-it-works-section">
-              <Box
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 How does it work
-              </Box>
+              </StyledMenuButton>
             </Link>
             <Link activeClass="active" smooth spy to="join-us-section">
-              <Box
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 Join us
-              </Box>
+              </StyledMenuButton>
             </Link>
           </Box>
           <Box

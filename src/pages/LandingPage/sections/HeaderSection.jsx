@@ -3,10 +3,12 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "assets/Arrowbutton.svg";
 import stripeImg from "assets/Abstractstripes.svg";
-import BuySell2 from "assets/Buysell2.png";
+// import BuySell2 from "assets/Buysell2.png";
 import centerImg from "assets/23123.png";
 import centerImgMobile from "assets/23123@2x.png";
-import BuyWeth2 from "assets/BuyWETH2.png";
+// import BuyWeth2 from "assets/BuyWETH2.png";
+import BuySell2 from "assets/Buysell1.svg";
+import BuyWeth2 from "assets/BuyWith1.svg";
 const HeaderSection = () => {
   return (
     <Box
@@ -43,11 +45,12 @@ const HeaderSection = () => {
               sx={{
                 position: "relative",
                 zIndex: "6",
-                font: {
-                  lg: "normal normal bold 94px/102px Montserrat, sans-serif",
-                  sm: "normal normal bold 65px Montserrat, sans-serif",
-                  xs: "normal normal bold 40px Montserrat, sans-serif",
+                fontSize: {
+                  lg: "94px",
+                  sm: "65px",
+                  xs: "40px",
                 },
+                fontWeight:"bold",
                 marginTop: { sm: "130px", xs: "90px" },
                 textAlign: "center",
                 width: { md: "100%", sm: "85%", xs: "88%" },
@@ -65,10 +68,11 @@ const HeaderSection = () => {
             <Box
               component="h2"
               sx={{
-                font: {
-                  sm: "normal normal 300 18px/45px Montserrat,sans-serif",
-                  xs: "normal normal 300 16px Montserrat,sans-serif",
+                fontSize: {
+                  sm: "18px",
+                  xs: "16px",
                 },
+                fontWeight:"300",
                 position: "relative",
                 zIndex: "6",
                 marginTop: "10px",
@@ -112,10 +116,11 @@ const HeaderSection = () => {
             >
               <Box
                 sx={{
-                  font: {
-                    sm: "normal normal 600 21px/22px Montserrat,sans-serif",
-                    xs: "normal normal 600 18px Montserrat,sans-serif",
+                  fontSize: {
+                    sm: "21px",
+                    xs: "18px",
                   },
+                  fontWeight:"600",
                   color: "#08061C",
                   position: "relative",
                   zIndex: "8",
@@ -140,7 +145,8 @@ const HeaderSection = () => {
             sx={{
               height: { md: "819px", sm: "580px" },
                backgroundImage: `url(${stripeImg})`,
-              backgroundPosition: { xs: "center" },
+              backgroundPosition: { sm: "center",xs:"right 50% top 50%" },
+              backgroundSize: { sm: "unset",xs:"cover" },
               marginTop: { xs: "45px", sm: "unset" },
             }}
           >
@@ -167,6 +173,7 @@ const HeaderSection = () => {
               <Box
                 sx={{
                   backgroundImage: { xs: `url(${BuySell2})` },
+                  backgroundRepeat: "no-repeat",
                   opacity: "1",
                   height: { md: "369px", sm: "300px" },
                   minWidth: { md: "307px", sm: "245px" },
@@ -181,6 +188,7 @@ const HeaderSection = () => {
               <Box
                 sx={{
                   backgroundImage: { xs: `url(${BuyWeth2})` },
+                  backgroundRepeat: "no-repeat",
                   opacity: "1",
                   height: { md: "409px", sm: "300px" },
                   width: { md: "520px", sm: "375px" },

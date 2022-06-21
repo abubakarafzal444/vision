@@ -99,10 +99,11 @@ const FeatureSection = () => {
             <Box
               component="h2"
               sx={{
-                font: {
-                  sm: "normal normal 600 45px/55px Montserrat,sans-serif",
-                  xs: "normal normal 600 30px Montserrat,sans-serif",
+                fontSize: {
+                  sm: "45px",
+                  xs: "30px",
                 },
+                fontWeight:"600",
                 marginBottom: { sm: "77px", xs: "70px" },
                 position: "relative",
                 zIndex: "6",
