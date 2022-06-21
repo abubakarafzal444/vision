@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1, maxWidth: "1920px", marginX: "auto" }}>
       <AppBar position="static" elevation={0} color="transparent">
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between",paddingBottom:"5px" }}>
           <Box
             sx={{ marginLeft: "7.3%", marginTop: { md: "27px", xs: "12px" } }}
           >
