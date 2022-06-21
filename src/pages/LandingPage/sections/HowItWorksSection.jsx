@@ -181,7 +181,7 @@ const HowItWorksSection = () => {
                     transform: { sm: "scaleX(1.15)" },
                     minWidth: { xs: "200px", sm: "unset" },
                     background: "#A29BFF 0% 0% no-repeat padding-box;",
-                    boxShadow: "0px 3px 30px #00DCFF7D;",
+                    boxShadow: {sm:"0px 3px 30px #00DCFF7D;"},
                     border: "1px solid #A29BFF",
                     color: "#0e0c29",
                     transition: "all 0.4s ease-out;",
