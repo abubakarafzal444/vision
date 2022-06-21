@@ -167,8 +167,6 @@ const HowItWorksSection = () => {
               <Button
                 variant="outlined"
                 sx={{
-                  maxWidth: { sm: "170px", xs: "100%" },
-                  minWidth: { xs: "100%", sm: "unset" },
                   height: "60px",
                   paddingX: "25px",
                   left: "50px",
@@ -179,10 +177,8 @@ const HowItWorksSection = () => {
                   marginTop: { sm: "65px", xs: "40px" },
                   marginLeft: "-100px",
                   transition: "all 0.3s ease-out;",
-
                   "&:hover": {
                     transform: { sm: "scaleX(1.15)" },
-                    maxWidth: { sm: "170px", xs: "200px" },
                     minWidth: { xs: "200px", sm: "unset" },
                     background: "#A29BFF 0% 0% no-repeat padding-box;",
                     boxShadow: "0px 3px 30px #00DCFF7D;",

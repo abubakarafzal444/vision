@@ -72,10 +72,9 @@ code {
   position: relative;
 }
 .li-no-span {
-  position: absolute;
-  z-index: 5;
-  left: 10px;
-  top: 2px;
+  position: relative;
+align-items: center;
+justify-content: center;
 }
 .list-item {
   display: table-row;
