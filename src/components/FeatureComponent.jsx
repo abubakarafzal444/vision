@@ -38,7 +38,7 @@ const FeatureComponent = ({ isKey, icon, heading, description, link }) => {
         sx={{
           fontSize: { sm: "28px", xs: "27px" },
           fontWeight: "600",
-          width: "80%",
+          width: "87%",
           position: "relative",
           zIndex: "3",
         }}
