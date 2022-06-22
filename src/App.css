@@ -111,7 +111,7 @@ justify-content: center;
   height: 240px;
   background: #1a1d44 0% 0% no-repeat padding-box;
   border-radius: 589px;
-  opacity: 5;
+  opacity: 1;
   position: absolute;
   filter: blur(50px);
   z-index: 3;
@@ -127,13 +127,12 @@ justify-content: center;
   position: absolute;
   left: -36px;
   top: -25px;
-  z-index: 2;
+  z-index: 1;
 }
 .features-h1 {
   left: -75px !important;
   bottom: 33px !important;
-  position: relative;
-  z-index: 10;
+  z-index: 3 !important;
 }
 
 .header-gradient {
@@ -176,5 +175,4 @@ justify-content: center;
   left: -55px;
   animation: auto;
   transition: all 0.3s ease-out;
-  z-index: 4;
 }

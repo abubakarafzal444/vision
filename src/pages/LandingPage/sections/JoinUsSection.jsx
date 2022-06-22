@@ -23,8 +23,8 @@ const JoinUsSection = () => {
       }}
     >
       <Box sx={{ position: "relative" }}>
-        <Box className="circle-parent"></Box>
-        <Box className="circle-child"></Box>
+        <Box sx={{zIndex:"3"}} className="circle-parent"></Box>
+        <Box sx={{zIndex:"1"}} className="circle-child"></Box>
         <Box
           component="h3"
           sx={{
@@ -36,8 +36,8 @@ const JoinUsSection = () => {
             },
             fontWeight: "600",
             color: "#A29BFF",
-            zIndex: "10",
             width: "180px",
+            zIndex:"6"
           }}
         >
           Join us!
