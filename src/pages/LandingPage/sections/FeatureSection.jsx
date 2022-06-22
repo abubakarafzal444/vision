@@ -94,15 +94,16 @@ const FeatureSection = () => {
           }}
         >
           <Box sx={{ position: "relative" }}>
-            <Box className="circle-parent features-h1"></Box>
-            <Box className="circle-child"></Box>
+            <Box sx={{zIindex:"3",left:"-75px",bottom:"33px"}} className="circle-parent"></Box>
+            <Box sx={{zIindex:"1"}} className="circle-child"></Box>
             <Box
               component="h2"
               sx={{
-                font: {
-                  sm: "normal normal 600 45px/55px Montserrat,sans-serif",
-                  xs: "normal normal 600 30px Montserrat,sans-serif",
+                fontSize: {
+                  sm: "45px",
+                  xs: "30px",
                 },
+                fontWeight:"600",
                 marginBottom: { sm: "77px", xs: "70px" },
                 position: "relative",
                 zIndex: "6",
@@ -112,6 +113,9 @@ const FeatureSection = () => {
               Features!
             </Box>
           </Box>
+
+
+
         </Box>
         <Box
           sx={{

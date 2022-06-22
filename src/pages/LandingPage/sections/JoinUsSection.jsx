@@ -1,16 +1,16 @@
 import { Box } from "@mui/system";
 import React from "react";
-import stripeImg from "assets/Abstractstripes.svg";
+import stripeImg from "assets/AbstractstripesJoinUs.svg";
 import Discord from "assets/Discord.svg";
 import Twitter from "assets/Twitter.svg";
 
 const JoinUsSection = () => {
   return (
     <Box id="join-us-section" component="section" sx={{  
-     backgroundImage: `url(${stripeImg})`,
-    backgroundPosition: { xs: "center" },
-    backgroundSize: { xs: "cover" },
-    marginTop: { xs: "100px", sm: "unset" },}}>
+    //  backgroundImage: `url(${stripeImg})`,
+    // backgroundPosition: { xs: "center" },
+    // backgroundSize: { xs: "cover" },
+    marginTop: { xs: "0", sm: "unset" },}}>
     <Box sx={{ maxWidth: "1920px", marginX: "auto" }}>
 
     <Box
@@ -18,25 +18,26 @@ const JoinUsSection = () => {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        marginTop: { sm: "180px", xs: "77px" },
-        // background: `transparent url(${stripeImg}) no-repeat right 20% top -48px`,
+        marginTop: { sm: "180px", xs: "0px" },
+        background: {sm:`transparent url(${stripeImg}) no-repeat right 50% top -20px`,}
       }}
     >
       <Box sx={{ position: "relative" }}>
-        <Box className="circle-parent"></Box>
-        <Box className="circle-child"></Box>
+        <Box sx={{zIndex:"3"}} className="circle-parent"></Box>
+        <Box sx={{zIndex:"1"}} className="circle-child"></Box>
         <Box
           component="h3"
           sx={{
             position: "relative",
             left: { md: "unset", xs: "40px" },
-            font: {
-              sm: "normal normal 600 45px/55px Montserrat,sans-serif",
-              xs: "normal normal 600 30px Montserrat,sans-serif",
+            fontSize: {
+              sm: "45px",
+              xs: "30px",
             },
+            fontWeight: "600",
             color: "#A29BFF",
-            zIndex: "6",
             width: "180px",
+            zIndex:"6"
           }}
         >
           Join us!
@@ -46,10 +47,11 @@ const JoinUsSection = () => {
         sx={{
           display: "flex",
           flexDirection: { sm: "row", xs: "column" },
-          font: {
-            sm: "normal normal 400 26px/25px Montserrat,sans-serif",
-            xs: "normal normal 400 20px Montserrat,sans-serif",
+          fontSize: {
+            sm: "26px",
+            xs: "20px",
           },
+          fontWeight: "400",
           marginTop: { sm: "32px", xs: "37px" },
         }}
       >
@@ -73,7 +75,6 @@ const JoinUsSection = () => {
               },
               backgroundSize: { sm: "200%" },
               transition: { sm: ".3s ease-in" },
-              paddingTop: { sm: "4px" },
               height:"100%",
             },
             "&:hover": {
@@ -86,14 +87,13 @@ const JoinUsSection = () => {
           }}
         >
           <Box
+            component="img"
+            src={Discord}
             sx={{
               width: "32px",
               height: "37px",
               color: "#A29BFF",
               marginRight: "5px",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${Discord}) `,
               
             "& .animated-link-btn": {
               minWidth: { sm: "180px" },
@@ -102,6 +102,7 @@ const JoinUsSection = () => {
               },
               backgroundSize: { sm: "200%" },
               transition: { sm: ".3s ease-in" },
+            
            
             },
             "&:hover": {
@@ -109,12 +110,14 @@ const JoinUsSection = () => {
                 backgroundPosition: "left",
                 color: { sm: "#020311" },
                 fontWeight: { sm: "bold" },
+                
               },
             },
             }}
           ></Box>
           <Box
-            className="animated-link-btn"
+          sx={{  paddingBottom:"6px"}}
+          className="animated-link-btn"
             component="span"
           >
             project_name
@@ -137,9 +140,8 @@ const JoinUsSection = () => {
               },
               backgroundSize: { sm: "200%" },
               transition: { sm: ".3s ease-in" },
-              paddingTop: { sm: "4px" },
               height:"100%",
-
+              paddingBottom:"6px"
             },
             "&:hover": {
               "& .animated-link-btn": {
@@ -151,14 +153,13 @@ const JoinUsSection = () => {
           }}
         >
           <Box
+          component="img"
+          src={Twitter}
             sx={{
               width: "32px",
               height: "37px",
               color: "#A29BFF",
               marginRight: "5px",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundImage: `url(${Twitter}) `,
             }}
           ></Box>
           <Box
@@ -169,9 +170,11 @@ const JoinUsSection = () => {
           </Box>
         </Box>
       </Box>
+      <Box sx={{ 
+        backgroundImage: {xs:`url(${stripeImg})`,sm:"unset"},height:"160px",width:"100%",backgroundSize:"1100px 470px",backgroundPosition:"right 38% top -129px",display:{sm:"none"}}}></Box>
       <Box
         sx={{
-          marginTop: { sm: "250px", xs: "160px" },
+          marginTop: { sm: "250px", xs: "0px" },
           display: "flex",
           justifyContent: "center",
         }}
@@ -179,13 +182,14 @@ const JoinUsSection = () => {
         <Box
           component="p"
           sx={{
-            font: "normal normal normal 16px/25px Montserrat;",
+            fontSize: "16px",
+            color:"#737691",
             marginBottom: { sm: "50px", xs: "21px" },
             textAlign: "center",
             width: { sm: "unset", xs: "70%" },
           }}
         >
-          Copyright 2022 Projekt_name. all rights reserved
+          Copyright 2022 Project_name. all rights reserved
         </Box>
       </Box>
     </Box>

@@ -5,29 +5,40 @@ import { IconButton } from "@mui/material";
 import HamburgerIcon from "assets/Hamburger1.svg";
 import NavDrawer from "components/NavDrawer";
 import { Link } from "react-scroll";
+import styled from "@emotion/styled";
 
-export default function Navbar({ allowScroll, disallowScroll }) {
+const StyledMenuButton = styled('p')({
+  fontSize: "19px",
+  fontWeight: "bold",
+  borderBottom: "3px solid #A29BFF",
+  paddingBottom: "7px",
+  cursor: "pointer",
+  "&:hover": {
+    color: "#A29BFF",
+  },
+});
+
+export default function Navbar() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
   const openDrawerHandler = () => {
-    disallowScroll();
     setOpenDrawer(true);
   };
   const closeDrawerHandler = () => {
     setOpenDrawer(false);
-    allowScroll();
   };
   return (
     <Box sx={{ flexGrow: 1, maxWidth: "1920px", marginX: "auto" }}>
       <AppBar position="static" elevation={0} color="transparent">
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between",paddingBottom:"5px" }}>
           <Box
             sx={{ marginLeft: "7.3%", marginTop: { md: "27px", xs: "12px" } }}
           >
             <Box
               sx={{
-                font: {
-                  sm: "normal normal 600 30px/37px Montserrat,sans-serif",
-                  xs: "normal normal 600 26 Montserrat,sans-serif",
+                fontSize: {
+                  sm: "30px",
+                  xs: "26px",
+                  fontWeight: "600",
                 },
                 color: "#E4E6FD",
                 cursor: "pointer",
@@ -56,53 +67,26 @@ export default function Navbar({ allowScroll, disallowScroll }) {
               marginTop: "51px",
             }}
           >
-            <Link activeClass="active" smooth spy to="feature-section">
-              <Box
+            <Link activeClass="active" offset={-100} smooth spy to="feature-section">
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 Features
-              </Box>
+              </StyledMenuButton>
             </Link>
-            <Link activeClass="active" smooth spy to="how-it-works-section">
-              <Box
+            <Link activeClass="active" offset={-230} smooth spy to="how-it-works-section">
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 How does it work
-              </Box>
+              </StyledMenuButton>
             </Link>
             <Link activeClass="active" smooth spy to="join-us-section">
-              <Box
+              <StyledMenuButton
                 component="p"
-                sx={{
-                  font: "normal normal bold 19px/19px Montserrat,sans-serif",
-                  borderBottom: "3px solid #A29BFF",
-                  paddingBottom: "7px",
-                  cursor: "pointer",
-                  "&:hover": {
-                    color: "#A29BFF",
-                  },
-                }}
               >
                 Join us
-              </Box>
+              </StyledMenuButton>
             </Link>
           </Box>
           <Box
@@ -120,10 +104,11 @@ export default function Navbar({ allowScroll, disallowScroll }) {
               onClick={openDrawerHandler}
             >
               <Box
+              component="img"
+              src={HamburgerIcon}
                 sx={{
                   width: "28px",
                   height: "20px",
-                  background: `url(${HamburgerIcon}) `,
                 }}
               ></Box>
             </IconButton>
