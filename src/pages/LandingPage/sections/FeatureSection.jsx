@@ -94,7 +94,7 @@ const FeatureSection = () => {
           }}
         >
           <Box sx={{ position: "relative" }}>
-            <Box sx={{zIindex:"3"}} className="circle-parent features-h1"></Box>
+            <Box sx={{zIindex:"3",left:"-75px",bottom:"33px"}} className="circle-parent"></Box>
             <Box sx={{zIindex:"1"}} className="circle-child"></Box>
             <Box
               component="h2"
@@ -113,6 +113,9 @@ const FeatureSection = () => {
               Features!
             </Box>
           </Box>
+
+
+
         </Box>
         <Box
           sx={{

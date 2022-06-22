@@ -85,7 +85,6 @@ const HowItWorksSection = () => {
               sx={{
                 marginLeft: { lg: "10vw", xs: "37px" },
                 marginRight: { sm: "unset", xs: "37px" },
-
                 marginTop: "80px",
                 maxWidth: "630px",
               }}
