@@ -117,7 +117,7 @@ justify-content: center;
   z-index: 3;
   left: -75px;
   bottom: -120px;
-  -webkit-transform: translate3d(0,0,0);
+  /* -webkit-transform: translate3d(0,0,0); */
 }
 .circle-child {
   width: 80px;
