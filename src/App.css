@@ -73,8 +73,8 @@ code {
 }
 .li-no-span {
   position: relative;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .list-item {
   display: table-row;
