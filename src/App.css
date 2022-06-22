@@ -111,10 +111,10 @@ justify-content: center;
   height: 240px;
   background: #1a1d44 0% 0% no-repeat padding-box;
   border-radius: 589px;
-  opacity: 1;
+  opacity: 5;
   position: absolute;
   filter: blur(50px);
-  z-index: 2;
+  z-index: 3;
   left: -75px;
   bottom: -120px;
 }
@@ -122,16 +122,18 @@ justify-content: center;
   width: 80px;
   height: 80px;
   background: #a29bff 0% 0% no-repeat padding-box;
-  opacity: 1;
+  opacity: 2;
   border-radius: 50px;
   position: absolute;
   left: -36px;
   top: -25px;
-  z-index: 1;
+  z-index: 2;
 }
 .features-h1 {
   left: -75px !important;
   bottom: 33px !important;
+  position: relative;
+  z-index: 10;
 }
 
 .header-gradient {
@@ -174,4 +176,5 @@ justify-content: center;
   left: -55px;
   animation: auto;
   transition: all 0.3s ease-out;
+  z-index: 4;
 }

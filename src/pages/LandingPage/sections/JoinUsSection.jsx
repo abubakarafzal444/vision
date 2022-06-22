@@ -36,7 +36,7 @@ const JoinUsSection = () => {
             },
             fontWeight: "600",
             color: "#A29BFF",
-            zIndex: "6",
+            zIndex: "7",
             width: "180px",
           }}
         >
